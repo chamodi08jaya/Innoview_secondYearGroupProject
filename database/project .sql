@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Sep 26, 2019 at 05:41 PM
+-- Generation Time: Sep 26, 2019 at 07:19 PM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -30,10 +30,12 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `attendence`;
 CREATE TABLE IF NOT EXISTS `attendence` (
+  `StudentId` int(11) NOT NULL,
   `CourseId` int(11) NOT NULL,
-  `Time` time NOT NULL,
   `Date` date NOT NULL,
-  KEY `CourseId` (`CourseId`)
+  `Time` time NOT NULL,
+  KEY `CourseId` (`CourseId`),
+  KEY `StudentId` (`StudentId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -45,9 +47,11 @@ CREATE TABLE IF NOT EXISTS `attendence` (
 DROP TABLE IF EXISTS `course`;
 CREATE TABLE IF NOT EXISTS `course` (
   `CourseId` int(11) NOT NULL,
-  `Name` varchar(100) NOT NULL,
-  `GRADE` varchar(1) NOT NULL,
-  PRIMARY KEY (`CourseId`)
+  `Emp_No` int(11) NOT NULL,
+  `Grade` int(2) NOT NULL,
+  `NAME` varchar(120) NOT NULL,
+  PRIMARY KEY (`CourseId`),
+  KEY `Emp_No` (`Emp_No`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -58,7 +62,11 @@ CREATE TABLE IF NOT EXISTS `course` (
 
 DROP TABLE IF EXISTS `hall`;
 CREATE TABLE IF NOT EXISTS `hall` (
-  `HallNo` int(11) NOT NULL
+  `Hall_No` int(11) NOT NULL,
+  `Emp_No` int(11) NOT NULL,
+  `Allocator` varchar(100) NOT NULL,
+  PRIMARY KEY (`Hall_No`),
+  KEY `Emp_No` (`Emp_No`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -83,17 +91,16 @@ CREATE TABLE IF NOT EXISTS `non_acedemic_staff` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `notifiaction`
+-- Table structure for table `notification`
 --
 
-DROP TABLE IF EXISTS `notifiaction`;
-CREATE TABLE IF NOT EXISTS `notifiaction` (
+DROP TABLE IF EXISTS `notification`;
+CREATE TABLE IF NOT EXISTS `notification` (
   `NotificationId` int(11) NOT NULL,
-  `EmpNo` int(11) NOT NULL,
+  `Emp_No` int(11) NOT NULL,
   `Date` date NOT NULL,
   `Message` varchar(1000) NOT NULL,
-  PRIMARY KEY (`NotificationId`),
-  KEY `EmpNo` (`EmpNo`)
+  PRIMARY KEY (`NotificationId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -120,10 +127,12 @@ CREATE TABLE IF NOT EXISTS `parent` (
 
 DROP TABLE IF EXISTS `payments`;
 CREATE TABLE IF NOT EXISTS `payments` (
+  `Amount` int(100) NOT NULL,
+  `StudentId` int(11) NOT NULL,
   `CourseId` int(11) NOT NULL,
-  `Amount` int(11) NOT NULL,
   `Date` date NOT NULL,
-  KEY `CourseId` (`CourseId`)
+  KEY `CourseId` (`CourseId`),
+  KEY `StudentId` (`StudentId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------

@@ -16,7 +16,7 @@
 </head>
 
 <body id="wrapper">
-
+    
     <section id="top-header">
         <div class="container">
             <div class="row">
@@ -58,15 +58,15 @@
                     <div id="navbar" class="collapse navbar-collapse navbar-right">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">Home</a></li>
-                            <li><a href="features.html">Contact Us</a></li>
+                            <li><a href="application\views\login.php">Contact Us</a></li>
                             <li><a href="about.html">About Us</a></li>
                             <li><a>Class Schedule</a></li>
 
                             <!-- <li><a href="portfolio.html">Portfolio</a></li>
                             <li><a href="faq.html">FAQ</a></li>
                             <li><a href="contact.html">Contact</a></li> -->
-                            <li><a href="login.php">Sign In</a></li>
-                            <li><a href="registration.html">Sign Up</a></li>
+                            <li><a href="+">Sign In</a></li>
+                            <li><a href="registration.php">Sign Up</a></li>
                         </ul>
                     </div>
                     <!--/.nav-collapse -->
@@ -101,7 +101,7 @@
             <div class="item">
                 <div class="fill" style="background-image:url('assets1/img/banner-slide-2.jpg');"></div>
                 <div class="carousel-caption slide-up">
-                    <h1 class="banner_heading">Providing The <span>Highest </span>Lorem</h1>
+                    <h1 class="banner_heading">Providing The <span>best </span>education</h1>
                     <p class="banner_txt">Lorem ipsum dolor sit amet sit legimus copiosae instructior eiut vix denique fierentis ea saperet inimicu utqui dolor oratio mnesarchum.</p>
                     <div class="slider_btn">
                         <button type="button" class="btn btn-default slide">Learn More <i class="fa fa-caret-right"></i></button>
@@ -113,7 +113,7 @@
             <div class="item">
                 <div class="fill" style="background-image:url('assets1/img/banner-slide-3.jpg');"></div>
                 <div class="carousel-caption slide-up">
-                    <h1 class="banner_heading">Providing The <span>Highest </span>Lorem</h1>
+                    <h1 class="banner_heading">Providing The <span>best </span>education</h1>
                     <p class="banner_txt">Lorem ipsum dolor sit amet sit legimus copiosae instructior eiut vix denique fierentis ea saperet inimicu utqui dolor oratio mnesarchum.</p>
                     <div class="slider_btn">
                         <button type="button" class="btn btn-default slide">Learn More <i class="fa fa-caret-right"></i></button>

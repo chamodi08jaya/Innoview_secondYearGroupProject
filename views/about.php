@@ -56,13 +56,14 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="home.php">Home</a></li>
-                        <li class="active"><a href="about.php">About Us</a></li>
-                        <li><a href="class_schedule.php">Class Schedule</a></li>
-                        <li><a href="contact.php">Contact Us</a></li>
-                        <li><a href="login.php">Sign In</a></li>
-                        <li><a href="registration.php">Sign Up</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/index">Home</a></li>
+                        <li class="active"><a href="#">About Us</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/registration">Sign Up</a></li>
                     </ul>
+                        
                 </div>
                 <!--/.nav-collapse -->
             </div>
@@ -72,7 +73,7 @@
     <section id="top_banner">
         <div class="banner">
                 <div class="inner text-center">
-                        <div class="fill"><img alt="" src="../assets1/img/pic.jpg" width="1350" height="100" alt="Galle fort"></div>        
+                        <div class="fill"><img alt="" src="../../assets1/img/pic.jpg" width="1350" height="100" alt="Galle fort"></div>        
                 </div>
                 
             <!-- <div class="inner text-center">
@@ -121,9 +122,9 @@
                  -->
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <img height="" width="auto" src="../assets1/img/awards.jpg" class="attachment-full img-responsive" alt="">
-                    <img height="" width="auto" src="../assets1/img/southrn.jpg" class="attachment-full img-responsive" alt="">
-                    <img height="" width="auto" src="../assets1/img/stu.jpg" class="attachment-full img-responsive" alt="">
+                    <img height="" width="auto" src="../../assets1/img/awards.jpg" class="attachment-full img-responsive" alt="">
+                    <img height="" width="auto" src="../../assets1/img/southrn.jpg" class="attachment-full img-responsive" alt="">
+                    <img height="" width="auto" src="../../assets1/img/stu.jpg" class="attachment-full img-responsive" alt="">
                
                 </div>
             </div>
@@ -365,7 +366,7 @@
                         <h4>Sothern Institute Galle</h4>
                         <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
                         <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                        <img src="..\assets1\img\map.png">
+                        <img src="..\..\assets1\img\map.png">
                         </a>
                         <hr/>
                         <!-- <h4>Address</h4>
@@ -381,11 +382,17 @@
                         <h4>Useful Links</h4>
                         <hr/>
                         <ul class="footer-links">
-                                <li><a href="home.php">Home</a></li>
-                                <li><a href="class_schedule.php">Class Schedule</a></li>
-                                <li><a href="contact.php">Contact Us</a></li>
+                                <!-- <li><a href="<?php echo base_url();?>index.php/Welcome/home">>Home</a></li> -->
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/index">Home</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
+                                <!-- <li><a href="class_schedule.php">Class Schedule</a></li> -->
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/registration">Sign Up</a><9/li>
+                                <!-- <li><a href="contact.php">Contact Us</a></li>
+
                                 <li><a href="login.php">Sign In</a></li>
-                                <li><a href="registration.php">Sign Up</a></li>
+                                <li><a href="registration.php">Sign Up</a></li> -->
                         </ul>
                     </div>
                 </div>

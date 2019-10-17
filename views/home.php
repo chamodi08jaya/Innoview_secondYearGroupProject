@@ -13,13 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="./script/index.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="/css/main.css">    
-    <link rel="stylesheet" type="text/css" href="/css/skin.css">
-    
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="../../../assets/script/index.js"></script>  -->
+   
      
 </head>
 
@@ -67,11 +61,11 @@
                     <div id="navbar" class="collapse navbar-collapse navbar-right">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">Home</a></li>
-                            <li><a href="about.php">About Us</a></li>
-                            <li><a href="class_schedule.php">Class Schedule</a></li>
-                            <li><a href="contact.php">Contact Us</a></li>
-                            <li><a href="login.php">Sign In</a></li>
-                            <li><a href="registration.php">Sign Up</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/registration">Sign Up</a></li>
                         </ul>
                     </div>
                     <!--/.nav-collapse -->
@@ -92,7 +86,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">     
-                <div class="fill" style="background-image:url('../assets1/img/pic.jpg');"></div>
+                <div class="fill" style="background-image:url('assets1/img/pic.jpg');"></div>
                 <div class="carousel-caption slide-up">
                     <h1 class="banner_heading">PROVIDING THE <span>BEST </span>EDUCATION</h1> 
                          <p class="banner_txt">We provide a well equipped institute with state of all facilities, starting from classrooms to make the studying experience of our students an easy and a well facilitated one.Parents are assured of the safety of their children at our institute and discipline of utmost important to us.</br>We are diverse, welcoming, accepting and passionate about being best we can be.
@@ -121,7 +115,7 @@
             </div> -->
 
             <div class="item">
-                <div class="fill" style="background-image:url('../assets1/img/banner-slide-3.jpg');"></div>
+                <div class="fill" style="background-image:url('assets1/img/banner-slide-3.jpg');"></div>
                 <div class="carousel-caption slide-up">
                     <h1 class="banner_heading">Providing The <span>best </span>education</h1>
                         <p class="banner_txt">We provide a well equipped institute with state of all facilities, starting from classrooms to make the studying experience of our students an easy and a well facilitated one.Parents are assured of the safety of their children at our institute and discipline of utmost important to us.</br>We are diverse, welcoming, accepting and passionate about being best we can be.
@@ -348,7 +342,8 @@
                         <h4>Sothern Institute Galle</h4>
                         <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
                         <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                            <img src="..\assets1\img\map.png">
+                            <img src="assets1\img\map.png">
+                            
                         </a>
                          <hr/>
                         <!-- <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.
@@ -362,11 +357,11 @@
                         <h4>Useful Links</h4>
                         <hr/>
                         <ul class="footer-links">
-                            <li><a href="about.php">About Us</a></li>
-                            <li><a href="class_schedule.php">Class Schedule</a></li>
-                            <li><a href="contact.php">Contact Us</a></li>
-                            <li><a href="login.php">Sign In</a></li>
-                            <li><a href="registration.php">Sign Up</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
+                            <li><a href="<?php echo base_url();?>index.php/Welcome/registration">Sign Up</a></li>
                         </ul>
                     </div>
                 </div>

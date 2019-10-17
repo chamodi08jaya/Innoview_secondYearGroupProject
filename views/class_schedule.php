@@ -72,12 +72,13 @@
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="login.html">Sign In</a></li>
                         <li><a href="registration.html">Sign Up</a></li> -->
-                        <li ><a href="home.php">Home</a></li>
-                        <li><a href="about.php">About Us</a></li>
+
+                        <li ><a href="<?php echo base_url();?>index.php/Welcome/index">Home</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
                         <li class="active"><a href="class_schedule.php">Class Schedule</a></li>
-                        <li><a href="contact.php">Contact Us</a></li>
-                        <li><a href="login.php">Sign In</a></li>
-                        <li><a href="registration.php">Sign Up</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/registration">Sign Up</a></li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
@@ -124,7 +125,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <div class="portfolio-one">
                         <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="../assets1/img/portfolio-1.jpg"></div>
+                            <div class="portfolio-img"><img alt="" src="../../assets1/img/portfolio-1.jpg"></div>
                             <div class="portfolio-hover">
                                 <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
                                 <a class="portfolio-zoom" href="#"><i class="fa fa-search"></i></a>
@@ -142,7 +143,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <div class="portfolio-one">
                         <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="../assets1/img/portfolio-1.jpg"></div>
+                            <div class="portfolio-img"><img alt="" src="../../assets1/img/portfolio-1.jpg"></div>
                             <div class="portfolio-hover">
                                 <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
                                 <a class="portfolio-zoom prettyPhoto" href="#"><i class="fa fa-search"></i></a>
@@ -160,7 +161,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <div class="portfolio-one">
                         <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="../assets1/img/portfolio-1.jpg"></div>
+                            <div class="portfolio-img"><img alt="" src="../../assets1/img/portfolio-1.jpg"></div>
                             <div class="portfolio-hover">
                                 <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
                                 <a class="portfolio-zoom prettyPhoto" href="#"><i class="fa fa-search"></i></a>
@@ -180,7 +181,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <div class="portfolio-one">
                         <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="../assets1/img/portfolio-1.jpg"></div>
+                            <div class="portfolio-img"><img alt="" src="../../assets1/img/portfolio-1.jpg"></div>
                             <div class="portfolio-hover">
                                 <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
                                 <a class="portfolio-zoom" href="#"><i class="fa fa-search"></i></a>
@@ -198,7 +199,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <div class="portfolio-one">
                         <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="../assets1/img/portfolio-1.jpg"></div>
+                            <div class="portfolio-img"><img alt="" src="../../assets1/img/portfolio-1.jpg"></div>
                             <div class="portfolio-hover">
                                 <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
                                 <a class="portfolio-zoom prettyPhoto" href="#"><i class="fa fa-search"></i></a>
@@ -216,7 +217,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <div class="portfolio-one">
                         <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="../assets1/img/portfolio-1.jpg"></div>
+                            <div class="portfolio-img"><img alt="" src="../../assets1/img/portfolio-1.jpg"></div>
                             <div class="portfolio-hover">
                                 <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
                                 <a class="portfolio-zoom prettyPhoto" href="#"><i class="fa fa-search"></i></a>
@@ -236,7 +237,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <div class="portfolio-one">
                         <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="../assets1/img/portfolio-1.jpg"></div>
+                            <div class="portfolio-img"><img alt="" src="../../assets1/img/portfolio-1.jpg"></div>
                             <div class="portfolio-hover">
                                 <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
                                 <a class="portfolio-zoom" href="#"><i class="fa fa-search"></i></a>
@@ -254,7 +255,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <div class="portfolio-one">
                         <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="../assets1/img/portfolio-1.jpg"></div>
+                            <div class="portfolio-img"><img alt="" src="../../assets1/img/portfolio-1.jpg"></div>
                             <div class="portfolio-hover">
                                 <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
                                 <a class="portfolio-zoom prettyPhoto" href="#"><i class="fa fa-search"></i></a>
@@ -272,7 +273,7 @@
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 portfolio-item">
                     <div class="portfolio-one">
                         <div class="portfolio-head">
-                            <div class="portfolio-img"><img alt="" src="../assets1/img/portfolio-1.jpg"></div>
+                            <div class="portfolio-img"><img alt="" src="../../assets1/img/portfolio-1.jpg"></div>
                             <div class="portfolio-hover">
                                 <a class="portfolio-link" href="#"><i class="fa fa-link"></i></a>
                                 <a class="portfolio-zoom prettyPhoto" href="#"><i class="fa fa-search"></i></a>
@@ -326,7 +327,7 @@
                             <h4>Sothern Institute Galle</h4>
                             <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
                             <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                                <img src="..\assets1\img\map.png">
+                                <img src="..\..\assets1\img\map.png">
                             </a>
                              <hr/>
                         <!-- <h4>Address</h4>
@@ -342,12 +343,12 @@
                         <h4>Useful Links</h4>
                         <hr/>
                         <ul class="footer-links">
-                                <li><a href="home.php">Home</a></li>
-                                <li><a href="about.php">About Us</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/index">Home</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
                                 <!-- <li><a href="class_schedule.html">Class Schedule</a></li> -->
-                                <li><a href="contact.php">Contact Us</a></li>
-                                <li><a href="login.php">Sign In</a></li>
-                                <li><a href="registration.php">Sign Up</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/registration">Sign Up</a></li>
                         </ul>
                     </div>
                 </div>

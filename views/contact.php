@@ -64,13 +64,13 @@
                 </div>
                 <div id="navbar" class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="home.php">Home</a></li>
-                        <li><a href="about.php">About Us</a></li>
-                        <li><a href="class_schedule.php">Class Schedule</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/index">Home</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
                         <li class="active"><a href="#contact">Contact Us</a></li>
                         <!-- <li><a href="contact.html">Contact Us</a></li> -->
-                        <li><a href="login.php">Sign In</a></li>
-                        <li><a href="registration.php">Sign Up</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/registration">Sign Up</a></li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->

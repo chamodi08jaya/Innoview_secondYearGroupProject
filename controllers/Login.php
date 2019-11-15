@@ -27,4 +27,12 @@ class Login extends CI_Controller {
 	{
 		$this->load->view('registration');
 	}
+	public function admin()
+	{
+		$this->load->view('admin');
+	}
+	public function logincom()
+	{
+		$this->load->view('logincom');
+	}
 }

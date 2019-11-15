@@ -1,9 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Class_schedule extends CI_Controller {
+class Admin extends CI_Controller {
 
-	
 	public function index(){
 		$this->load->view('home');
 	}
@@ -23,5 +22,11 @@ class Class_schedule extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
-	
+	public function registration()
+	{
+		$this->load->view('registration');
+	}
+	public function admin(){
+		$this->load->view('admin');
+	}
 }

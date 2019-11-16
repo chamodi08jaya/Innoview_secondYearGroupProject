@@ -14,7 +14,7 @@
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <!-- <script src="C:\wamp64\www\project\assets1\script\index.js"></script> -->
 
-    <script type="text/javascript" src="assets1\script\index.js"></script>
+    <script type="text/javascript" src="..\..\assets1\script\index.js"></script>
 
     
     
@@ -26,7 +26,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="assets/script/index.js"></script>      -->
+    <script src="../../../assets/script/index.js"></script>      -->
 </head>
 
 <body id="wrapper">
@@ -110,9 +110,16 @@
 
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('assets1/img/uni.jpg');"></div>
-                <!-- <div class="fill">
-                    <img alt="" src="<?php echo base_url();?>assets1/img/banner-slide-3.jpg"  alt="Galle fort">       
+            <!-- <form style ="background-image: url('assets1/img/banner-slide-3.jpg');">
+                </form> -->
+               
+               
+                <div class="fill" >
+                    <img alt=""  height="600" width="1400" src="<?php echo base_url();?>assets1/img/uni.jpg"  alt="Galle fort">       
+               
+                </div> 
+                <!-- <div class="fill" style="background-image">
+                    <img alt="" src="<?php echo base_url();?>assets1/img/uni.jpg"  alt="Galle fort">       
                
                 </div> -->
                 <div class="carousel-caption slide-up">
@@ -141,9 +148,12 @@
                  </div>
             </div> -->
 
-            <div class="item ">
-                <div class="fill" style="background-image:url('assets1/img/southern.jpg');"></div>
+            <div class="item">
+                <!-- <div class="fill" style="background-image:url('assets1\img\southern.jpg');"></div> -->
+                <div class="fill" >
+                    <img alt=""  height="600" width="1500" src="<?php echo base_url();?>assets1/img/southern.jpg"  alt="Galle fort">       
                
+                </div> 
                 <div class="carousel-caption slide-up">
                     <h1 class="banner_heading">A RELAX ENVIRONMENT TO UNLESH YOUR  POTENTIAL.<span></span></h1>
                         <!-- <p class="banner_txt">We provide a well equipped institute with state of all facilities, starting from classrooms to make the studying experience of our students an easy and a well facilitated one.Parents are assured of the safety of their children at our institute and discipline of utmost important to us.</br>We are diverse, welcoming, accepting and passionate about being best we can be.

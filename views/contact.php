@@ -10,68 +10,69 @@
     <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/main.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/skin.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="./script/index.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="../css/main.css">    
-    <link rel="stylesheet" type="text/css" href="../css/skin.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="../../../assets/script/index.js"></script>     -->
-
+    <script type="text/javascript" src="..\..\assets1\script\index.js"></script>
 </head>
 
 <body id="wrapper">
 
-    <section id="top-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12 top-header-links">
-                    <ul class="contact_links">
-                        <li><i class="fa fa-phone"></i><a href="#">+0912 242 189</a></li>
-                        <!-- <li><i class="fa fa-envelope"></i><a href="#">sales@aspiresoftware.in</a></li> -->
-                    </ul>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <ul class="social_links">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <!-- <li><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
-                        <li><a href="#"><i class="fa fa-skype"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </div>
-
-    </section>
-
-    <header>
-        <nav class="navbar navbar-inverse">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-                    <a class="navbar-brand" href="#">
-                        <!-- <h1>Aspire</h1><span>Software Solutions</span></a> -->
-                        <h3>Southern Educational Institute</h3><span>Galle</span></a> 
-                </div>
-                <div id="navbar" class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li><a href="<?php echo base_url();?>index.php/Welcome/index">Home</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
-                        <li class="active"><a href="#contact">Contact Us</a></li>
+        <section id="top-header">
+                <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-12 top-header-links">
+                                <!-- <ul class="contact_links">
+                                    <li><i class="fa fa-phone"></i><a href="#">+0912 242 189</a></li> -->
+                                    <!-- <li><i class="fa fa-envelope"></i><a href="#">sales@aspiresoftware.in</a></li> -->
+                            
+                            </div> 
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <ul class="social_links">
+                                    <li><i class="fa fa-phone"></i><a href="#">Call Us +0912 242 189</a></li>
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <!-- <li><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
+                                    <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                    <!-- <li><a href="#"><i class="fa fa-facebook">facebook</i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter">Twitter</i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
+                                    <li><a href="#"><i class="fa fa-skype">Skype</i></a></li> --> 
+                            
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+        </section>
+        <header>
+                <nav class="navbar navbar-expand-lg navbar-light text-white bg-dark ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <!-- <span class="icon-bar"></span> -->
+                        <span class="icon-bar"></span>
+                      </button>
+                                <a class="navbar-brand " href="#" al>
+                                        <!-- <div class="col-xs-2 icon"><img src="..\..\..\assets1\img\logo.jpeg"></src></i></div> -->
+                                        <img height="120px" width="120px" src="<?php echo base_url();?>assets1\img\logo.jpeg" class="attachment-full img-responsive" alt="">
+                                   
+                                        <!-- <h1>Southern Educational Institute</h1><span>Galle</span></a>  -->
+                                    <!-- < src="..\..\..\assets1\img\logo.jpeg">        -->
+                            </div>
+                            <div id="navbar" class="collapse navbar-collapse navbar-right">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="<?php echo base_url();?>index.php/Welcome/home">Home</a></li>
+                                     <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
+                                    <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
+                                    <li class="active"><a href="#contact">Contact Us</a></li>
                         <!-- <li><a href="contact.html">Contact Us</a></li> -->
-                        <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
-                        <li><a href="<?php echo base_url();?>index.php/Welcome/registration">Sign Up</a></li>
-                    </ul>
+                                    <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
+					</ul>
                 </div>
                 <!--/.nav-collapse -->
             </div>
@@ -79,21 +80,21 @@
         <!--/.nav-ends -->
     </header>
     <section id="top_banner">
-         <div class="banner">
-                <div class="inner text-center">
+         <!-- <div class="banner"> -->
+                <!-- <div class="inner text-center">
                         <div class="fill"><img alt="" src="../../../assets1/img/pic.jpg" width="1350" height="100" alt="Galle fort"></div>        
-                </div>
-        </div>
+                </div> -->
+        <!-- </div> -->
         <div class="page_info">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-50 col-sm-50 col-xs-100">
+                    <div class="col-md-8 col-sm-8 col-xs-6">
                            <h4>Contact INFo</h4>
-                        <h5>Welcome to our Website.We are glad to have you around.</h5>
-                        <!-- </div> -->
+                          <h5>Welcome to our Website.We are glad to have you around.</h5>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-6" style="text-align:left;">Home<span class="sep"> / </span><span class="current">Contact</span></div>
-                </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6" style="text-align:right;">Home<span class="sep"> / </span><span class="current">Contact Us</span></div>
+                    </div>
+                 </div>
             </div>
         </div>
 
@@ -102,7 +103,7 @@
     <section id="contact-page">
         <div class="container">
             <div class="section-heading text-center">
-                <h2>Drop your <span>Message</span></h2>
+                <h2> <span>Drop yourMessage</span></h2>
                 <p class="subheading">Your email address will not be published.Required fields are marked.</p>
             </div>
             <div class="row contact-wrap">
@@ -119,11 +120,11 @@
                         </div>
                         <div class="form-group">
                             <label>Phone</label>
-                            <input type="number" class="form-control">
+                            <input type="number" name="phone" class="form-control" required="required">
                         </div>
                         <div class="form-group">
                             <label>Southern Institute ID</label>
-                            <input type="text" class="form-control">
+                            <input type="text" name="ID" class="form-control" required="required" >
                         </div>
                     </div>
                     <div class="col-sm-5">
@@ -153,7 +154,7 @@
                             <div class="gmap">
                                     <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" > -->
                                     <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                                        <img src="..\assets1\img\map2.png" width="500" heiht="200"></img>
+                                        <img src="<?php echo base_url();?>assets1\img\map2.png" width="500" heiht="200"></img>
                                     </a>
                                /
                                 <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/place/Southern+Educational+Institute/@6.0430383,80.2116041,17z/data=!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203;output=embed"></iframe>
@@ -166,12 +167,18 @@
                             <ul class="row">
                                 <li class="col-sm-6">
                                     <address>
-									<h5>Place</h5>
+									<h5>Visit Us</h5>
 									<p>Southern Educational Institute <br>
                                     Wimalasurendra Mawatha,<br>
 									Galle 80000,<br>
 									Sri Lanka. </p>
-										<p>Phone:+0912 242 189<br>
+                                        <p>Phone:+0912 242 189<br>
+                                    <br/>      
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                                    <!-- <li><a href="#"><i class="fa fa-pinterest"></i></a></li> -->
+                                    <a href="#"><i class="fa fa-skype"></i></a>
 									<!-- Email Address:sales@aspiresoftware.in</p> -->
 								</address>
 
@@ -196,111 +203,119 @@
             </div>
         </div>
     </section>
+
     <section id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3 col-xs-12 block">
-                    <div class="footer-block">
-                        <h4>Sothern Institute Galle</h4>
-                        <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
-                        <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                            <img src="..\assets1\img\map.png">
-                        </a>
-                        <hr/>
-                        <!-- <h4>Address</h4>
-                        <hr/>
-                        <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.
-                        </p>
-                        <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-12 block">
+                        <div class="footer-block">
+                            <h4>Southern Institute Galle</h4>
+                                <div class="user-image"><img src="<?php echo base_url();?>assets1\img\logo.jpeg" alt="user" class="img-responsive" /></div>
+                       
+                            <!-- <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
+                            <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
+                                <img src="..\..\..\assets1\img\map.png">
+                            </a>
+                             <hr/> -->
+                            <!-- <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum.
+                            </p> -->
+                            <!-- <a href="#" class="learnmore">Learn More <i class="fa fa-caret-right"></i></a> -->
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-md-3 col-sm-3 col-xs-12 block">
-                    <div class="footer-block">
-                        <h4>Useful Links</h4>
-                        <hr/>
-                        <ul class="footer-links">
-                            <li><a href="home.php">Home</a></li>
-                            <li><a href="about.php">About Us</a></li>
-                            <li><a href="class_schedule.php">Class Schedule</a></li>
-                            <!-- <li><a href="contact.html">Contact Us</a></li> -->
-                            <li><a href="login.php">Sign In</a></li>
-                            <li><a href="registration.php">Sign Up</a></li>
-                        </ul>
+    
+                    <div class="col-md-3 col-sm-3 col-xs-12 block">
+                        <div class="footer-block">
+                            <h4>Useful Links</h4>
+                            <!-- <hr/> -->
+                            <ul class="footer-links">
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/home">Home</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/login">Sign In</a></li>
+					        </ul>
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-md-3 col-sm-3 col-xs-12 block">
-                    <div class="footer-block">
-                        <h4>Community</h4>
-                        <hr/>
-                        <ul class="footer-links">
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Forum</a></li>
-                            <li><a href="#">Free Goods</a></li>
-                        </ul>
+    
+                    
+                </ul>
+                    <div class="col-md-3 col-sm-3 col-xs-12 block">
+                        <div class="footer-block">
+                                <h4>Visit Us</h4>
+                                <h5>Southern Institute Galle</h5>
+                                <h5>Wimalasurendra Mawatha, <br/>Galle 80000, </br>  Sri Lanka</h5>
+                                <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
+                                    <img src="<?php echo base_url();?>assets1\img\map.png">
+                                </a>
+                                 <!-- <hr/> -->
+                            <!-- <ul class="footer-links">
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Forum</a></li>
+                                <li><a href="#">Free Goods</a></li>
+                            </ul> -->
+                        </div>
                     </div>
-                </div>
-
-                <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
-                    <div class="footer-block">
-                        <h4>Recent Posts</h4>
-                        <hr/>
-                        <ul class="footer-links">
-                            <li>
-                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                <p class="post-date">May 25, 2017</p>
-                            </li>
-                            <li>
-                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                <p class="post-date">May 25, 2017</p>
-                            </li>
-                            <li>
-                                <a href="#" class="post">Lorem ipsum dolor sit amet</a>
-                                <p class="post-date">May 25, 2017</p>
-                            </li>
-
-                        </ul>
+    
+                    <div class="col-md-3 col-sm-3 col-xs-12 <block></block>">
+                        <div class="footer-block">
+                            <h4>Recent Posts</h4>
+                            <!-- <hr/> -->
+                            <ul class="footer-links">
+                                <li>
+                                    <div class="user-image"><img src="<?php echo base_url();?>assets1\img\post.jpeg" alt="user" class="img-responsive" /></div>
+                       
+                                    <!-- <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                    <p class="post-date">May 25, 2017</p> -->
+                                </li>
+                                <!-- <li>
+                                    <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                    <p class="post-date">May 25, 2017</p>
+                                </li>
+                                <li>
+                                    <a href="#" class="post">Lorem ipsum dolor sit amet</a>
+                                    <p class="post-date">May 25, 2017</p>
+                                </li> -->
+    
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-
-    </section>
-
-    <section id="bottom-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 copyright">
+    
+    
+        </section>
+    
+        <section id="bottom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 btm-footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 copyright">
                         Developed by <a href="#">Team Innoview</a> designed by <a href="#">UCSC</a>
-                    <!-- Developed by <a href="#">Aspire Software Solutions</a> designed by <a href="#">Designing Team</a> -->
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-    <!-- <div id="panel">
-        <div id="panel-admin">
-            <div class="panel-admin-box">
-                <div id="tootlbar_colors">
-                    <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
-                    <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
-                    <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
-                    <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
-                    <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
-                    <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
+        </section>
+    
+        <!-- <div id="panel">
+            <div id="panel-admin">
+                <div class="panel-admin-box">
+                    <div id="tootlbar_colors">
+                        <button class="color" style="background-color:#1abac8;" onclick="mytheme(0)"></button>
+                        <button class="color" style="background-color:#ff8a00;" onclick="mytheme(1)"> </button>
+                        <button class="color" style="background-color:#b4de50;" onclick="mytheme(2)"> </button>
+                        <button class="color" style="background-color:#e54e53;" onclick="mytheme(3)"> </button>
+                        <button class="color" style="background-color:#1abc9c;" onclick="mytheme(4)"> </button>
+                        <button class="color" style="background-color:#159eee;" onclick="mytheme(5)"> </button>
+                    </div>
                 </div>
+    
             </div>
-
-        </div>
-        <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
-    </div> -->
-</body>
-
-</html>
+            <a class="open" href="#"><span><i class="fa fa-gear fa-spin"></i></span></a>
+        </div> -->
+    </body>
+    </html>
+    
+    
+   

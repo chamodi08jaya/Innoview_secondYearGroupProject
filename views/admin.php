@@ -1,11 +1,12 @@
-<?php include('application\views\includes\session.php') ?>
+?php include('includes/connection.php') ?>
+<?php include('includes/session.php') ?>
 
 <?php
-    //Unauthorized Access Check
+	//Unauthorized Access Check
     checkSession();
     if(!isset($_SESSION['user_type']) || $_SESSION['user_type'] != '1'){
        $message = base64_encode(urlencode("Please Login"));
-       header('Location:application\views\login.php?msg=' . $message);
+       header('Location:login.php?msg=' . $message);
        exit();
        }
 

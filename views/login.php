@@ -1,6 +1,6 @@
 
-<?php include('application\views\includes\connection.php') ?>
-<?php include('application\views\includes\session.php') ?>
+<?php include('includes/connection.php') ?>
+<?php include('includes/session.php') ?>
 <!DOCTYPE html>
 <html>
 
@@ -164,8 +164,8 @@
                                     </div>
                                 </div>
                                  <div class="form-bottom">
-                                 <!-- <form action="logincom.php" method="post"> -->
-                                    <form role="form" action="logincom.php" method="post" class="login-form" >
+                                  <form action="login_submit.php" method="post"> 
+                                  <!--  <form role="form" action="logincom.php" method="post" class="login-form" >-->
                                         <div class="input-group form-group">
                                             <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                             <input type="text" id="user_name" name="user_name" class="form-control" placeholder="username" aria-describedby="basic-addon1" required="required">

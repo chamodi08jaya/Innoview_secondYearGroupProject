@@ -35,4 +35,12 @@ class Login extends CI_Controller {
 	{
 		$this->load->view('logincom');
 	}
+	public function home()
+	{
+		$this->load->view('welcome');
+	}
+	public function login_submit()
+	{
+		$this->load->view('login_submit');
+	}
 }

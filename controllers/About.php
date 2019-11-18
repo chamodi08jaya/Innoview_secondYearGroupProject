@@ -22,5 +22,13 @@ class About extends CI_Controller {
 	{
 		$this->load->view('login');
 	}
+	public function home()
+	{
+		$this->load->view('welcome');
+	}
+	public function logincom()
+	{
+		$this->load->view('logincom');
+	}
 	
 }

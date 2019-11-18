@@ -1,8 +1,9 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Admin extends CI_Controller {
+class Logincom extends CI_Controller {
 
+	
 	public function index(){
 		$this->load->view('home');
 	}
@@ -26,15 +27,16 @@ class Admin extends CI_Controller {
 	{
 		$this->load->view('registration');
 	}
-	public function admin(){
-		$this->load->view('admin');
-	}
-	public function home()
+	public function admin()
 	{
-		$this->load->view('welcome');
+		$this->load->view('admin');
 	}
 	public function logincom()
 	{
 		$this->load->view('logincom');
+	}
+	public function home()
+	{
+		$this->load->view('welcome');
 	}
 }

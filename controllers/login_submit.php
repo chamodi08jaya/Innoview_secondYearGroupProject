@@ -1,8 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Admin extends CI_Controller {
+class Login extends CI_Controller {
 
+	public function admin(){
+		$this->load->view('admin');
+	}
 	public function index(){
 		$this->load->view('home');
 	}
@@ -26,15 +29,20 @@ class Admin extends CI_Controller {
 	{
 		$this->load->view('registration');
 	}
-	public function admin(){
+	public function admin()
+	{
 		$this->load->view('admin');
+	}
+	public function logincom()
+	{
+		$this->load->view('logincom');
 	}
 	public function home()
 	{
 		$this->load->view('welcome');
 	}
-	public function logincom()
+	public function login_submit()
 	{
-		$this->load->view('logincom');
+		$this->load->view('login_submit');
 	}
 }

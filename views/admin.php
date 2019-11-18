@@ -1,4 +1,4 @@
-?php include('includes/connection.php') ?>
+<?php include('includes/connection.php') ?>
 <?php include('includes/session.php') ?>
 
 <?php
@@ -24,22 +24,21 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/main.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/main.css">    
     <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/skin.css">
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="..\..\assets1\script\index.js"></script>
-    <!-- <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/main.css">    
-    <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/skin.css">
+    <!-- <script src="C:\wamp64\www\project\assets1\script\index.js"></script> -->
+
+    <!-- <script type="text/javascript" src="assets1\script\index.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script> --> 
     <!-- <script src="C:\wamp64\www\project\assets1\script\index.js"></script> -->
 
     <!-- <script type="text/javascript" src="assets1\script\index.js"></script> -->
- 
+    <script type="text/javascript" src="assets1\script\index.js"></script>
 </head>
 
 <body id="wrapper">
@@ -87,7 +86,7 @@
               </button>
               <a class="navbar-brand " href="#" al>
                 <!-- <div class="col-xs-2 icon"><img src="..\..\..\assets1\img\logo.jpeg"></src></i></div> -->
-                <img height="120px" width="120px" src="..\..\..\assets1\img\logo.jpeg" class="attachment-full img-responsive" alt="">
+                <img height="120px" width="120px" src="assets1\img\logo.jpeg" class="attachment-full img-responsive" alt="">
            
                 <!-- <h1>Southern Educational Institute</h1><span>Galle</span></a>  -->
             <!-- < src="..\..\..\assets1\img\logo.jpeg">        -->
@@ -97,11 +96,11 @@
                 </div> -->
                 <div id="navbar" class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav">
-                            <li><a href="home.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="class_schedule.html">Class Schedule</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="signout.html">Sign Out</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/home">Home</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/signout">Sign Out</a></li>
                             <!-- <li><a href="login.html">Sign In</a></li> -->
                         <!-- <li><a href="index.html">Home</a></li>
                         <li class="active"><a href="#about">Features</a></li> -->
@@ -440,7 +439,7 @@
                     <div class="col-md-3 col-sm-3 col-xs-12 block">
                         <div class="footer-block">
                             <h4>Southern Institute Galle</h4>
-                            <div class="user-image"><img src="..\..\..\assets1\img\logo.jpeg" alt="user" class="img-responsive" /></div>
+                            <div class="user-image"><img src="assets1\img\logo.jpeg" alt="user" class="img-responsive" /></div>
                            
                             <!-- <img src="..\..\..\assets1\img\logo.jpeg"> -->
                             <!-- <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
@@ -459,10 +458,14 @@
                             <h4>Useful Links</h4>
                             <!-- <hr/> -->
                             <ul class="footer-links">
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="class_schedule.html">Class Schedule</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="login.html">Sign In</a></li>
+                               
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/home">Home</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
+                                <li><a href="<?php echo base_url();?>index.php/Welcome/signout">Sign Out</a></li>
+                               
+                               
                                 <!-- <li><a href="registration.html">Sign Up</a></li> -->
                             </ul>
                         </div>
@@ -477,7 +480,7 @@
                             <h4>Southern Institute Galle</h4>
                             <h5>Wimalasurendra Mawatha, Galle 80000, </br>  Sri Lanka</h5>
                             <a href= "https://www.google.com/maps/place/Southern+Educational+Institute/@6.043113,80.2108316,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xb116c9761f2d7d15!8m2!3d6.043113!4d80.2130203">
-                                <img src="..\..\..\assets1\img\map.png">
+                                <img src="assets1\img\map.png">
                             </a>
                              <!-- <hr/> -->
                             <!-- <ul class="footer-links">
@@ -494,7 +497,7 @@
                             <!-- <hr/> -->
                             <ul class="footer-links">
                                 <li>
-                                     <div class="user-image"><img src="..\..\..\assets1\img\post.jpeg" alt="user" class="img-responsive" /></div>
+                                     <div class="user-image"><img src="assets1\img\post.jpeg" alt="user" class="img-responsive" /></div>
                            
                                     <!-- <a href="#" class="post">Lorem ipsum dolor sit amet</a>
                                     <p class="post-date">May 25, 2017</p> -->

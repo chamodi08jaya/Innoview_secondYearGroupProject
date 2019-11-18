@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Student Home Page</title>
+    <title>Receptionist Home Page</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?php echo base_url();?>assets1/scss/main.css">    
@@ -72,23 +72,12 @@
                     </div> -->
                     <div id="navbar" class="collapse navbar-collapse navbar-right">
                         <ul class="nav navbar-nav">
-                                <li><a href="<?php echo base_url();?>index.php/Welcome/home">Home</a></li>
-                                <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
-                                <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
-                                <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
-                                <li><a href="<?php echo base_url();?>index.php/Welcome/signout">Sign Out</a></li>
-                               
-                                <!-- <li><a href="login.html">Sign In</a></li> -->
-                            <!-- <li><a href="index.html">Home</a></li>
-                            <li class="active"><a href="#about">Features</a></li> -->
-                            <!-- <li><a href="about.html">About Us</a></li> -->
-                            <!-- <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="faq.html">FAQ</a></li> -->
-                            <!-- <li><a href="class_schedule">Class Schedule</a></li>
-                            <li><a href="contact.html">Contact Us</a></li> -->
-                            <!-- <li><a href="login.html">Sign In</a></li>
-                            <li><a href="registration.html">Sign Up</a></li> -->
-                            <!-- <li><a href="signout.html">Sign Out</a></li> -->
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/home">Home</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
+                        <li><a href="<?php echo base_url();?>index.php/Welcome/signout">Sign Out</a></li>
+                        
                         </ul>
                     </div>
                     <!--/.nav-collapse -->
@@ -97,7 +86,7 @@
             <!--/.nav-ends -->
         </header>
     
-    
+
 
 
 
@@ -120,8 +109,8 @@
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <i class="fa fa-laptop boxicon"></i>
-                                                        <h3>Edit Profile</h3>
+                                                        <i class="fa fa-bullhorn boxicon"></i>
+                                                        <h3>Notifications</h3>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -132,8 +121,8 @@
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <h3><a href="edit_profile.html">Edit Profile</a></h3>
-                                                        <p>You will enable to change and control your public and private information on your "Profile Page". </p>
+                                                        <h3><a href="Notifications.html">Notifications</a></h3>
+                                                        <p>Don't miss important information and activity.</p>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -152,20 +141,20 @@
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <i class="fa fa-bullhorn boxicon"></i>
-                                                        <h3>Notifications</h3>
+                                                        <i class="fa fa-laptop boxicon"></i>
+                                                        <h3>Registrations</h3>
                                                     </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                     </div>
-                                    <div class="iconbox-box 2 face back">
+                                    <div class="iconbox-box2 face back">
                                         <table>
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <h3><a href="Notifications.html">Notifications</a></h3>
-                                                        <p>Don't miss important information and activity.</p>
+                                                        <h3><a href="registrations.html">Registrations</a></h3>
+                                                        <p>Register users into the system.</p>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -185,7 +174,7 @@
                                                 <tr>
                                                     <td>
                                                         <i class="fa fa-support boxicon"></i>
-                                                        <h3>Virtual Learning Environment</h3>
+                                                        <h3>Hall Management</h3>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -196,8 +185,8 @@
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <h3><a href="VLE.html">Virtual Learning Environment</a></h3>
-                                                        <p>This system designed to support teaching and learning activities via the internet. </p>
+                                                        <h3><a href="hall_mangement.html">Hall Management</a></h3>
+                                                        <p> Manage the halls in the institute.</p>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -229,7 +218,7 @@
                                                 <tr>
                                                     <td>
                                                         <h3><a href="payment.html">Payment</a></h3>
-                                                        <p>The trade value . </p>
+                                                        <p> The trade value . </p>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -261,7 +250,7 @@
                                                 <tr>
                                                     <td>
                                                         <h3><a href="attendence.html">Attendence</a></h3>
-                                                        <p> </p>
+                                                        <p></p>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -273,8 +262,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>  
+        </div>>
+    </section>
+
 
         <!-- <div class="subsection2">
             <div class="container">
@@ -310,8 +300,8 @@
                     </div>
                     <div class="col-md-4 col-sm-6 wpb_column">
                         <div class="wpb_wrapper">
-                            <div class="iconbox iconbox-style-2 icon-color clearfix">
-                                 icon-color-greyscale -->
+                            <div class="iconbox iconbox-style-2 icon-color clearfix">-->
+                                <!-- icon-color-greyscale -->
                                 <!-- <div class="iconbox-icon">
                                     <i class="fa fa-cloud-download sl-badge boxicon"></i>
                                 </div>
@@ -334,9 +324,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>  -->
 
-        <div class="subsection3" style=" overflow-x:hidden;">
+        <!-- <div class="subsection3" style=" overflow-x:hidden;">
 
             <div class="container">
                 <div class="row">
@@ -363,8 +353,8 @@
                                     <h4>Powerful Features</h4>
                                     <p>Lorem ipsum dolor sit amet sit legimus copiosae instructior fierentis ea saperet inimicu ut qui dolor oratio mnesarchum</p>
                                 </div>
-                            </div>
-                            <div class="featureblock nomargin">
+                            </div> -->
+                            <!-- <div class="featureblock nomargin">
                                 <div class="col-md-2 col-xs-2 icon"><i class="fa fa-support feature_icon"></i></div>
                                 <div class="col-md-10 col-xs-10">
                                     <h4>Customer Support</h4>
@@ -374,18 +364,18 @@
                             </div>
                         </div>
 
-                    </div> -->
+                    </div>
 
-                <!-- </div>
+                </div>
             </div>
-        </div>
+        </div> -->
 
-         --pricing- -->
+        <!--pricing-->
         <!-- <div class="subsection4">
             <div class="container">
                 <div class="col span_12">
-                    <div class="col-sm-12 wpb_column column_container"> --> 
-                        <!-- <div class="wpb_wrapper">
+                    <div class="col-sm-12 wpb_column column_container">
+                        <div class="wpb_wrapper">
                             <div class="section-heading text-center">
                                 <h1>Our <span>Plans</span></h1>
                                 <p class="subheading">Lorem ipsum dolor sit amet sit legimus copiosae instructior ei ut vix denique fierentis ea saperet inimicu ut qui dolor oratio mnesarchum ea utamur impetus fuisset nam nostrud euismod volumus ne mei.</p>
@@ -406,8 +396,8 @@
                                                     <li><strong>Free</strong> Setup</li>
                                                     <li><strong>10GB</strong> Storage</li>
                                                     <li><strong>100GB</strong> Bandwith</li>
-                                                    <li><strong>5</strong> Products</li>
-                                                     <li><strong>Basic</strong> Stats</li> -->
+                                                    <li><strong>5</strong> Products</li> -->
+                                                    <!-- <li><strong>Basic</strong> Stats</li> -->
                                                 <!-- </ul>
                                                 <div class="pricing-signup">
                                                     <a href="#" class="button color-5">Buy Now</a>
@@ -432,8 +422,8 @@
                                                     <li><strong>Free</strong> Setup</li>
                                                     <li><strong>100GB</strong> Storage</li>
                                                     <li><strong>1000GB</strong> Bandwith</li>
-                                                    <li><strong>25</strong> Products</li>
-                                                     <li><b>Complex</b>&nbsp;Stats</li> -->
+                                                    <li><strong>25</strong> Products</li> -->
+                                                    <!-- <li><b>Complex</b>&nbsp;Stats</li> -->
                                                 <!-- </ul>
                                                 <div class="pricing-signup">
                                                     <a href="#" class="button color-5">Buy Now</a>
@@ -452,12 +442,12 @@
                                                         <span class="pricing-amount">$99.00</span>
                                                         <span class="pricing-per">per week</span>
                                                     </div>
-                                                </div> -->
-                                                <!-- <ul>
+                                                </div>
+                                                <ul>
                                                     <li><strong>Free</strong> Setup</li>
                                                     <li><strong>50GB</strong> Storage</li>
                                                     <li><strong>500GB</strong> Bandwith</li>
-                                                    <li><b>Unlimited</b> Products</li> --> 
+                                                    <li><b>Unlimited</b> Products</li> -->
                                                     <!-- <li><b>Complex</b> Stats</li> -->
                                                 <!-- </ul>
                                                 <div class="pricing-signup">
@@ -473,7 +463,8 @@
                 </div>
             </div>
         </div>
-    </section>  --> 
+    </section> -->
+
     <section id="footer">
             <div class="container">
                 <div class="row">
@@ -502,8 +493,8 @@
                                 <li><a href="<?php echo base_url();?>index.php/Welcome/about">About Us</a></li>
                                 <li><a href="<?php echo base_url();?>index.php/Welcome/class_schedule">Class Schedule</a></li>
                                 <li><a href="<?php echo base_url();?>index.php/Welcome/contact">Contact Us</a></li>
-                                <li><a href="<?php echo base_url();?>index.php/Welcome/signout">Sign Out</a></li>
-                               
+                                 <li><a href="<?php echo base_url();?>index.php/Welcome/signout">Sign Out</a></li>
+                        
                             </ul>
                         </div>
                     </div>

@@ -1,15 +1,22 @@
 <?php
-	$dbsevername = "localhost";
-	$dbUsername = "root";
-	$dbPassword = "";
-	$dbName = "innoview_db";
 
-	$conn = mysqli_connect("localhost", "root", "","innoview_db");
-	
-	if (!$conn) {
-		echo "No Connection";
-	}
-	else {
-		echo "Connected";
-	}
+$dbservername = "localhost";
+$dbUsername = "root";
+$dbPassword = "";
+$dbName = "innoview_db";
+
+$connection = mysqli_connect($dbservername, $dbUsername, $dbPassword,$dbName);
+
+if (!$connection) {
+	echo "No Connection";
+}
+else{
+   echo "Connected"; 
+}
+/*
+if ($connection->connect_error) {
+	die("Connection Failed". $conn->connect_error);
+}		
+*/
+
 ?>

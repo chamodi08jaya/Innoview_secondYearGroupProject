@@ -37,6 +37,7 @@ $config['base_url'] = 'http://localhost/project/';
 */
 $config['index_page'] = 'index.php';
 
+
 /*
 |--------------------------------------------------------------------------
 | URI PROTOCOL

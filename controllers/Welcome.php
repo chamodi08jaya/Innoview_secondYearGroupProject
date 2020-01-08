@@ -49,6 +49,9 @@ class Welcome extends CI_Controller {
 	}
 	public function admin(){
 		$this->load->view('admin');
+		
+	}
+	public function sturegistrations(){
 		$this->load->view('sturegistrations');
 	}
 

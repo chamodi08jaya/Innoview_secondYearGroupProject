@@ -20,4 +20,13 @@ $item = new studentregistration;
 $item->registeruser();
 redirect(base_url().'index.php/Welcome/sturegistrations','refresh');
 }
+
+public function tregistration()
+{
+$this->load->model('teacherregistrations');
+$item = new tearegistrations;
+$item->registeruser();
+redirect(base_url().'index.php/Welcome/tearegistrations','refresh');
+}
+
 }

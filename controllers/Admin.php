@@ -41,8 +41,14 @@ class Admin extends CI_Controller {
 	{
 		$this->load->view('sturegistrations');
 	}
-	public function tearegistrations()
+
+	// public function tearegistrations()
+	// {
+	// 	$this->load->view('tearegistrations');
+	// }
+
+	public function recepregistrations()
 	{
-		$this->load->view('tearegistrations');
+		$this->load->view('recepregistrations');
 	}
 }

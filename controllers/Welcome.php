@@ -1,4 +1,3 @@
-
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -28,15 +27,9 @@ class Welcome extends CI_Controller {
 	
 	public function login_submit()
 	{
-		//  print("bchdvbubvy");
+		// print("bchdvbubvy");
 		$this->load->view('login_submit');
-
 		// $this->load->view('admin');
-
-		
-
-    
-
 		
 	}
 	public function admin(){
@@ -47,21 +40,19 @@ class Welcome extends CI_Controller {
 		$this->load->view('sturegistrations');
 	}
 
-	public function teacherregistrations(){
-		$this->load->view('teacherregistrations');
+	public function tearegistrations(){
+		$this->load->view('tearegistrations');
 	}
 
-	public function receptionistregistrations(){
-		$this->load->view('receptionistregistrations');
+	public function recepregistrations(){
+		$this->load->view('recepregistrations');
 	}
 
-	public function editusers(){
-		$this->load->view('editusers');
-	}
+	// public function receptionist(){
+	// 	$this->load->view('receptionist');
+	// }
 
-	public function editcourses(){
-		$this->load->view('editcourses');
-	}
+	
 
 	public function logout(){
 		// $this->load->view('logout');
@@ -70,14 +61,10 @@ class Welcome extends CI_Controller {
 			session_unset($_SESSION["user_type"]);
 			session_unset($_SESSION["user_id"]);
 			$message = base64_encode(urlencode(("Logged Out Successfully")));
-			
 			header('Location:login.php?msg=' . $message);
 			exit();
 		}	
 	}
-	// public function teacherregistrations{
-	// 	$this->load->view('teacherregistrations');
-	// }
 
 	
 	

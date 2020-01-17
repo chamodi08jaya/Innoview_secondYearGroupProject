@@ -19,14 +19,12 @@ $this->load->model('studentregistration');
 $item = new studentregistration;
 $item->registeruser();
 redirect(base_url().'index.php/Welcome/sturegistrations','refresh');
+
+$this->load->model('teacherregistrations');
+$item = new teacherregistrations;
+$item->registeruser();
+redirect(base_url().'index.php/Welcome/teacherregistrations','refresh');
 }
 
-public function tregistration()
-{
-$this->load->model('teacherregistrations');
-$item = new tearegistrations;
-$item->registeruser();
-redirect(base_url().'index.php/Welcome/tearegistrations','refresh');
-}
 
 }

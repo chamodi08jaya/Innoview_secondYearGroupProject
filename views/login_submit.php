@@ -1,7 +1,10 @@
+<?php require_once('includes/connection.php'); ?>
+<?php require_once('includes/session.php'); ?>
+
+
 <?php
 
-include('includes/connection.php');
-include('includes/session.php');
+
 
 if(isset($_POST['submit'])){
 	
@@ -18,14 +21,7 @@ if(isset($_POST['submit'])){
     //User Exists
     if (mysqli_num_rows($userResult) == 1) {
             $userRow = mysqli_fetch_array($userResult);
-            //print_r($userRow);
-            
-            //Creating Session
-            //  checkSession();   
-            //     if(!empty($_SESSION['user_id'])){
-            //              session_start();
-            //          }
-            //         );   
+           
             $_SESSION["user_name"] = $userRow['user_name'];
             $_SESSION["user_id"] = $userRow['user_id'];
             $_SESSION["user_type"] = $userRow['user_type'];
@@ -79,11 +75,13 @@ if(isset($_POST['submit'])){
         // $message = base64_encode(urlencode("Invalid Email or Password"));
         // header('Location:login.php?msg=' . $message);
         // exit();
+
+        
     }
     
 }
 
-mysqli_close($connection);
+// mysqli_close($connection);
     
     
 ?>

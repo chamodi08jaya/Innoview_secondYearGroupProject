@@ -10,7 +10,6 @@
        header('Location:login.php?msg=' . $message);
        exit();
        }
-
 ?>
 
 
@@ -63,19 +62,21 @@
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
         </div>
-        <nav class="templatemo-left-nav">          
-          <ul>
+        <nav class="templatemo-left-nav">
+        <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/admin"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="#" class="active"><i class="fa fa-users fa-fw"></i>Student Registration</a></li>
             <!-- <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Charts</a></li> -->
             <li><a href="<?php echo base_url();?>index.php/Welcome/tearegistrations"><i class="fa fa-users fa-fw"></i>Teacher Registration</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/sturegistrations"><i class="fa fa-users fa-fw"></i>Receptionist Registration</a></li>
-            <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Notification</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/recepregistrations"><i class="fa fa-users fa-fw"></i>Receptionist Registration</a></li>
+            <!-- <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Notification</a></li>
+             -->
             <!-- <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li> -->
             <!-- <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Manage Users</a></li> -->
-            <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Manage Courses</a></li>
-            <li><a href="login.html"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
-          </ul>  
+            <li><a href="<?php echo base_url();?>index.php/Welcome/editcourses"><i class="fa fa-sliders fa-fw"></i>Manage Courses</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+          </ul>            
+       
         </nav>
       </div>
       <!-- Main content --> 
@@ -85,9 +86,9 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
                 <li><a href="" class="active">Admin panel</a></li>
-                <li><a href="">Dashboard</a></li>
+                <!-- <li><a href="">Dashboard</a></li>
                 <li><a href="">Overview</a></li>
-                <li><a href="login.html">Sign in form</a></li>
+                <li><a href="login.html">Sign in form</a></li> -->
               </ul>  
             </nav> 
           </div>
@@ -115,7 +116,6 @@
             <!-- <div class="row"> -->
                 <!-- <div class="col-md-3 col-sm-10 forms-right-icons">
                   
-
                 </div> -->
                 <!--forms-right-icons-->
                 <div class="templatemo-content-widget templatemo-login-widget white-bg">
@@ -198,7 +198,7 @@
                 
                 <tr>
                     <td></td>
-                    <td><input class="templatemo-blue-button width-100" type="submit" name="submit" value="submit" onclick="registrationform();">
+                    <td><input class="templatemo-blue-button width-100" type="submit" name="submit" value="submit">
                     <br/>
                     <input class="templatemo-blue-button width-100" type="reset" name="RESET"></td>
                 </tr>
@@ -227,8 +227,8 @@
             </div>
           </div>
           <footer class="text-right">
-            <p>Copyright &copy; 2084 Company Name 
-            | Design: Template Mo</p>
+            <p>Copyright &copy; Team Innoview
+            | UCSC</p>
           </footer>         
         </div>
       </div>
@@ -243,7 +243,6 @@
       -------------------------------------------------------------------*/
       // Load the Visualization API and the piechart package.
       google.load('visualization', '1.0', {'packages':['corechart']});
-
       // Set a callback to run when the Google Visualization API is loaded.
       google.setOnLoadCallback(drawChart); 
       
@@ -251,7 +250,6 @@
       // instantiates the pie chart, passes in the data and
       // draws it.
       function drawChart() {
-
           // Create the data table.
           var data = new google.visualization.DataTable();
           data.addColumn('string', 'Topping');
@@ -263,18 +261,14 @@
             ['Zucchini', 1],
             ['Pepperoni', 2]
           ]);
-
           // Set chart options
           var options = {'title':'How Much Pizza I Ate Last Night'};
-
           // Instantiate and draw our chart, passing in some options.
           var pieChart = new google.visualization.PieChart(document.getElementById('pie_chart_div'));
           pieChart.draw(data, options);
-
           var barChart = new google.visualization.BarChart(document.getElementById('bar_chart_div'));
           barChart.draw(data, options);
       }
-
       $(document).ready(function(){
         if($.browser.mozilla) {
           //refresh page on browser resize

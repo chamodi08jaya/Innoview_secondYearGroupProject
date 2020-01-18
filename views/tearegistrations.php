@@ -57,17 +57,18 @@
             <i class="fa fa-bars"></i>
         </div>
         <nav class="templatemo-left-nav">          
-          <ul>
+        <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/admin"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/sturegistrations"><i class="fa fa-users fa-fw"></i>Student Registration</a></li>
             <!-- <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Charts</a></li> -->
             <li><a href="#" class="active"><i class="fa fa-users fa-fw"></i>Teacher Registration</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/sturegistrations"><i class="fa fa-users fa-fw"></i>Receptionist Registration</a></li>
-            <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Notification</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/recepregistrations"><i class="fa fa-users fa-fw"></i>Receptionist Registration</a></li>
+            <!-- <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Notification</a></li>
+             -->
             <!-- <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li> -->
             <!-- <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Manage Users</a></li> -->
-            <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Manage Courses</a></li>
-            <li><a href="login.html"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/editcourses"><i class="fa fa-sliders fa-fw"></i>Manage Courses</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
           </ul>  
         </nav>
       </div>
@@ -78,9 +79,9 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
                 <li><a href="" class="active">Admin panel</a></li>
-                <li><a href="">Dashboard</a></li>
+                <!-- <li><a href="">Dashboard</a></li>
                 <li><a href="">Overview</a></li>
-                <li><a href="login.html">Sign in form</a></li>
+                <li><a href="login.html">Sign in form</a></li> -->
               </ul>  
             </nav> 
           </div>
@@ -116,6 +117,12 @@
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                         <input type="text" class="form-control" id="Teacher_ID" name="teacher_id" placeholder=" Enter Teacher ID Number" aria-describedby="basic-addon1" required="required">
                                 </div>
+
+                                <div class="input-group form-group">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                        <input type="text" class="form-control" id="emp_no" name="emp_no" placeholder=" Enter Employee Number" aria-describedby="basic-addon1" required="required">
+                                </div>
+
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                         <input type="text" class="form-control" id="name" name="name" placeholder=" Name" aria-describedby="basic-addon1" required="required">
@@ -155,9 +162,12 @@
 
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                    <input type="button" name="subject" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subject</button>
-                                        <form>
-                                            <div>
+                                    <input type="text" class="form-control" name="subject" placeholder="subject" aria-describedby="basic-addon1" required="required">
+                              
+                                    <!-- <input type="button" name="subject" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subject</button>
+                                       -->
+                                    <!-- <form>  -->
+                                            <!-- <div>
                                             
                                             <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                             <option selected>Choose...</option>
@@ -165,7 +175,7 @@
                                             <option value="2">Chemistry</option>
                                             <option value="3">Physics</option>
                                             </select>
-                                            </div>
+                                            </div> -->
                                 </div>
                             
                               
@@ -192,7 +202,7 @@
                 
                 <tr>
                     <td></td>
-                    <td><input class="templatemo-blue-button width-100" type="submit" name="submit" value="submit" onclick="registrationform();">
+                    <td><input class="templatemo-blue-button width-100" type="submit" name="submit" value="submit" >
                     <br/>
                     <input class="templatemo-blue-button width-100" type="reset" name="RESET"></td>
                 </tr>

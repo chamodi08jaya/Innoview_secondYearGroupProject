@@ -12,7 +12,7 @@ $data1 = array(
 $this->db->insert('users',$data1);
 
 $data2 = array(
-'teacherid_fk'=> $this->input->post('student_id'),
+'teacherid_fk'=> $this->input->post('teacher_id'),
 'courseid_fk'=> $this->input->post('course_id'),
 'hall_no'=> $this->input->post('hall_no'),
 'numofstudents'=> $this->input->post('numofstu'),
@@ -29,7 +29,7 @@ $this->db->insert('course',$data3);
 
 $data = array(
 'emp_no'=> $this->input->post('teacher_id'),
-'name'=> $this->input->post('name'),
+'name'=> $this->input->post('user_name'),
 //'gender'=> $this->input->post('gender'),
 'contact_no'=> $this->input->post('contact_number'),
 'email'=> $this->input->post('email'),

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 17, 2020 at 11:31 AM
+-- Generation Time: Jan 21, 2020 at 12:15 PM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -39,6 +39,39 @@ CREATE TABLE `class` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `contact_us`
+--
+
+CREATE TABLE `contact_us` (
+  `name` varchar(200) DEFAULT NULL,
+  `email` varchar(200) DEFAULT NULL,
+  `subject` varchar(50) DEFAULT NULL,
+  `message` varchar(1000) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contact_us`
+--
+
+INSERT INTO `contact_us` (`name`, `email`, `subject`, `message`) VALUES
+(NULL, NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact_us2`
+--
+
+CREATE TABLE `contact_us2` (
+  `name` varchar(15) NOT NULL,
+  `email` varchar(20) NOT NULL,
+  `subject` varchar(100) NOT NULL,
+  `message` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `course`
 --
 
@@ -48,6 +81,13 @@ CREATE TABLE `course` (
   `grade` varchar(10) NOT NULL,
   `teacher_fk` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `course`
+--
+
+INSERT INTO `course` (`course_id`, `subject`, `grade`, `teacher_fk`) VALUES
+('Eng123', 'Pure Mathematics', 'AL', 'Ban98');
 
 -- --------------------------------------------------------
 
@@ -139,7 +179,8 @@ CREATE TABLE `receptionist` (
 --
 
 INSERT INTO `receptionist` (`emp_no`, `name`, `contact_no`, `address`) VALUES
-('1346', 'Nisal Adikari', '0710442471', 'kelaniya');
+('1346', 'Nisal Adikari', '0710442471', 'kelaniya'),
+('E123', 'Lakshan', '0710442471', 'Matara');
 
 -- --------------------------------------------------------
 
@@ -182,9 +223,7 @@ INSERT INTO `student` (`student_id`, `first_name`, `last_name`, `gender`, `conta
 ('2017is020', 'Bathiya ', 'Jayakodi', 'male', '0710442471', 'vfdv', '1996-07-11', 'bathiyaj@gmail.com'),
 ('2017is031cd', 'd', 'dv', 'male', '0710442471', 'kelaniya', '2000-02-08', 'banuka96@gmail.com'),
 ('2017is032', 'Banuka', 'Hathurusinghe', 'male', '0710442471', 'kelaniya', '2019-11-01', 'banuka.hathurusinghe7@aiesec.net'),
-('2017is038', 'fw', 'fwef', 'male', 'c d ', 'vsd', '2019-11-06', 'vw'),
-('2017is039', 'fw', 'fwef', 'male', 'c d ', 'vsd', '2019-11-06', 'vw'),
-('2017is040', 'fw', 'fwef', 'male', 'c d ', 'vsd', '2019-11-06', 'vw');
+('L1234', 'Lamudu', 'Mohotti', 'male', '0710442471', 'Gampaha', '2020-01-14', 'banuka96@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -216,6 +255,7 @@ CREATE TABLE `student_parent` (
 --
 
 INSERT INTO `student_parent` (`nic`, `studentid_fk`, `name`, `contact_no`) VALUES
+('96438452113', 'L1234', 'Nandasara', '0710442745'),
 ('968131476V', '55', 'Tharumall', '8888888889'),
 ('968131478V', '178', 'nimal', '8888888889'),
 ('968131478V', '179', 'nimal', '8888888889'),
@@ -248,6 +288,13 @@ CREATE TABLE `teacher` (
   `email` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `teacher`
+--
+
+INSERT INTO `teacher` (`emp_no`, `name`, `gender`, `contact_no`, `email`) VALUES
+('Ban98', 'LalaKavini', '', '0710442471', 'banuka96@gmail.com');
+
 -- --------------------------------------------------------
 
 --
@@ -260,6 +307,15 @@ CREATE TABLE `teacher_teach` (
   `hall_no` varchar(10) NOT NULL,
   `numofstudents` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `teacher_teach`
+--
+
+INSERT INTO `teacher_teach` (`teacherid_fk`, `courseid_fk`, `hall_no`, `numofstudents`) VALUES
+('980', 'Scie12', 's102', 200),
+('ban123', 'Maths012d', 's102', 200),
+('Ban98', 'Eng123', 's102', 200);
 
 -- --------------------------------------------------------
 
@@ -304,16 +360,14 @@ INSERT INTO `users` (`user_id`, `user_type`, `user_name`, `password`) VALUES
 ('2017is031cd', 'Student', 'v', '1234'),
 ('2017is032', 'Student', 'banukadhavi', '1234'),
 ('2017is033', 'Student', 'banukadhavi', '1234'),
-('2017is034', 'Student', 'v', '1111'),
-('2017is035', 'Student', 'v', '1111'),
-('2017is036', 'Student', 'v', '1234'),
-('2017is037', 'Student', 'v', '12345'),
-('2017is038', 'Student', 'v', '12345'),
-('2017is039', 'Student', 'v', '1234'),
-('2017is040', 'Student', 'v', '1234'),
 ('5432', 'Receptionist', 'NisalAdi', '1234'),
 ('6549', 'Teacher', 'Ram K', '1234'),
+('980', 'Teacher', 'Naveen', '1234'),
 ('9876', 'Teacher', 'Somapala', '1234'),
+('B123', 'Receptionist', 'Lucky', '1234'),
+('ban123', 'Teacher', 'Babdu', '1234'),
+('Ban98', 'Teacher', 'LalaKavini', '1234'),
+('L1234', 'Student', 'lamudu', '1234'),
 ('T0175', 'Teacher', 'Ganesh Bro', '1234'),
 ('T01756', 'Teacher', 'Ganesh Brother', '1234'),
 ('T12013', 'Teacher', 'Kamal', 'Kamal@123');
@@ -445,7 +499,7 @@ ALTER TABLE `users`
 -- Constraints for table `course`
 --
 ALTER TABLE `course`
-  ADD CONSTRAINT `fk2` FOREIGN KEY (`teacher_fk`) REFERENCES `teacher` (`emp_no`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `fk2` FOREIGN KEY (`teacher_fk`) REFERENCES `users` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `notice`

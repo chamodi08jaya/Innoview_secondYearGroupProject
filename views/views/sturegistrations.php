@@ -32,12 +32,6 @@
     <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/templatemo-style.css" rel="stylesheet">
     
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
   </head>
   <body>  
@@ -48,45 +42,47 @@
           <div class="square"></div>
           <h1> Admin</h1>
         </header>
-        <div class="profile-photo-container">
+        <!-- <div class="profile-photo-container">
           <img src="<?php echo base_url();?>assets/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
           <div class="profile-photo-overlay"></div>
-        </div>      
+        </div>  -->     
         <!-- Search box -->
-        <form class="templatemo-search-form" role="search">
+        <!-- <form class="templatemo-search-form" role="search">
           <div class="input-group">
               <button type="submit" class="fa fa-search"></button>
               <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
           </div>
-        </form>
+        </form> -->
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
         </div>
-        <nav class="templatemo-left-nav">          
-          <ul>
+        <nav class="templatemo-left-nav">
+        <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/admin"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="#" class="active"><i class="fa fa-users fa-fw"></i>Student Registration</a></li>
             <!-- <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Charts</a></li> -->
-            <li><a href="<?php echo base_url();?>index.php/Welcome/teacherregistrations"><i class="fa fa-users fa-fw"></i>Teacher Registration</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/registrations"><i class="fa fa-users fa-fw"></i>Receptionist Registration</a></li>
-            <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Notification</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/tearegistrations"><i class="fa fa-users fa-fw"></i>Teacher Registration</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/recepregistrations"><i class="fa fa-users fa-fw"></i>Receptionist Registration</a></li>
+            <!-- <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Notification</a></li>
+             -->
             <!-- <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li> -->
             <!-- <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Manage Users</a></li> -->
-            <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Manage Courses</a></li>
-            <li><a href="login.html"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
-          </ul>  
+            <li><a href="<?php echo base_url();?>index.php/Welcome/editcourses"><i class="fa fa-sliders fa-fw"></i>Manage Courses</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+          </ul>            
+       
         </nav>
       </div>
       <!-- Main content --> 
       <div class="templatemo-content col-1 light-gray-bg">
         <div class="templatemo-top-nav-container">
           <div class="row">
-            <nav class="templatemo-top-nav col-lg-12 col-md-12">
+            <nav class="templatemo-top-nav col-lg-6 col-md-6">
               <ul class="text-uppercase">
                 <li><a href="" class="active">Admin panel</a></li>
-                <li><a href="">Dashboard</a></li>
+                <!-- <li><a href="">Dashboard</a></li>
                 <li><a href="">Overview</a></li>
-                <li><a href="login.html">Sign in form</a></li>
+                <li><a href="login.html">Sign in form</a></li> -->
               </ul>  
             </nav> 
           </div>
@@ -105,38 +101,17 @@
                 <!-- <div class="form-top-right">
                                 <i class="fa fa-pencil"></i>
                             </div> -->
-          <div class="templatemo-flex-row flex-content-row templatemo-overflow-hidden"> <!-- overflow hidden for iPad mini landscape view-->
-            <!-- <div class="col-1 templatemo-overflow-hidden">
-              <div class="templatemo-content-widget white-bg templatemo-overflow-hidden">
-                <i class="fa fa-times"></i>
-                <div class="container"> -->
-            <!-- Top content -->
-            <!-- <div class="row"> -->
-                <!-- <div class="col-md-3 col-sm-10 forms-right-icons">
-                  
-                </div> -->
-                <!--forms-right-icons-->
-                <div class="templatemo-content-widget templatemo-login-widget white-bg">
-                <!-- <div class="section-heading"> -->
-                        <!-- <h2><span>Sign Up Students  With Us</span></h2> -->
-                        <!-- <br/>
-                        <p class="subheading">Register all the students to our system.
-                        </p> -->
-                    <!-- </div> -->
+          <div class="templatemo-flex-row flex-content-row templatemo-overflow-hidden">
+               <div class="templatemo-content-widget templatemo-login-widget white-bg"> 
                     <div class="form-box">
                         <div class="form-top">
-                            <!-- <div class="form-top-left">
-                                <h3>Sign up now</h3>
-                                <p>Fill in the form below to get instant access</p>
-                            </div> -->
-                            
                         </div>
                         <div class="form-bottom">
                         <form role="form" action="<?php echo site_url('Signup/registration');?>" method="post" class="login-form">
-                                
+
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                    <input type="text" class="form-control" id="user_type" name="user_type" placeholder="Student" value="Student" aria-describedby="basic-addon1" required="required">
+                                    <input type="text" class="form-control" id="user_type" name="user_type" placeholder="Student" value="Student" readonly aria-describedby="basic-addon1" required="required">
                                 </div>
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
@@ -151,7 +126,7 @@
                                         <input type="text" class="form-control" id="last_name" name="last_name" placeholder=" Last Name" aria-describedby="basic-addon1" required="required">
                                 </div>
                                 <div class="input-group form-group">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i>&nbsp&nbsp&nbspDate of Birth</span>
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i>Date of Birth</span>
                                         <input type="date" class="form-control" name="dob" placeholder="Date of Birth" label="Date of Birth" aria-describedby="basic-addon1" required="required">
                                 </div>
                                 <div class="input-group form-group">
@@ -196,7 +171,7 @@
                 
                 <tr>
                     <td></td>
-                    <td><input class="templatemo-blue-button width-100" type="submit" name="submit" value="submit" onclick="registrationform();">
+                    <td><input class="templatemo-blue-button width-100" type="submit" name="submit" value="submit">
                     <br/>
                     <input class="templatemo-blue-button width-100" type="reset" name="RESET"></td>
                 </tr>
@@ -225,8 +200,8 @@
             </div>
           </div>
           <footer class="text-right">
-            <p>Copyright &copy; 2084 Company Name 
-            | Design: Template Mo</p>
+            <p>Copyright &copy; Team Innoview
+            | UCSC</p>
           </footer>         
         </div>
       </div>

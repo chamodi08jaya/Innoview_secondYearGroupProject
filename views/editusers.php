@@ -35,8 +35,8 @@
         <ul>
             <li><a a href="<?php echo base_url();?>index.php/Welcome/students"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="#" class="active"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
-             <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>VLE</a></li>
+             <li><a href="<?php echo base_url();?>index.php/Welcome/stu_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Course Content</a></li>
            <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
           
@@ -75,18 +75,24 @@
                         </div>
                         <div class="form-bottom">
                         <form>
-                                
+                                 <div class="input-group form-group">
+                                     Student Id
+                                      <span class="form-control" name="student_id" > 
+                                    <?php
+                                          echo $_SESSION['user_id'] ;
+                                     ?>
+                                     </span>        
+                                </div>
                            
                                 <div class="input-group form-group">
-                                     Student no
-                                      <span class="form-control" name="student_id" > 
-                                      <?php
-                                         $result=$this->db->query("SELECT student_id FROM student Where student_id='{$_SESSION['user_id']}' ");
-                                         foreach($result->result() as $row){
-                                            echo "<option>".$row->student_id."</option>";
-                                          }  
-                                     ?>       
+                                     User Name
+                                      <span class="form-control" name="user_name" > 
+                                    <?php
+                                          echo $_SESSION['user_name'] ;
+                                     ?>
+                                     </span>        
                                 </div>
+                           
                                 
                                 <div class="input-group form-group">
                                      Name
@@ -152,6 +158,31 @@
                                        
                                 </div>
 
+                                <div class="input-group form-group">
+                                     Student Parents Name
+                                     <span class="form-control" name="name" > 
+                                     <?php
+                                         $result=$this->db->query("SELECT name FROM student_parent Where studentid_fk='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->name."</option>";
+                                          }  
+                                     ?>
+                                     </span> 
+                                       
+                                </div>
+
+                                <div class="input-group form-group">
+                                     Student Parents Contact Number
+                                     <span class="form-control" name="name" > 
+                                     <?php
+                                         $result=$this->db->query("SELECT contact_no FROM student_parent Where studentid_fk='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->contact_no."</option>";
+                                          }  
+                                     ?>
+                                     </span> 
+                                       
+                                </div>
 
 
    

@@ -35,7 +35,7 @@
             <li><a href="<?php echo base_url();?>index.php/Welcome/receptionist"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="#" class="active"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
         </ul>  
@@ -75,7 +75,7 @@
                         <div class="form-bottom">
                         <form>
                                 
-                           
+                        
                                 <div class="input-group form-group">
                                      Employee no
                                       <span class="form-control" name="emp_no" > 
@@ -84,12 +84,14 @@
                                      ?>
                                      </span>        
                                 </div>
+
+                                
                                 
                                 <div class="input-group form-group">
                                      Name
                                       <span class="form-control" name="name" > 
                                       <?php
-                                         $result=$this->db->query("SELECT name FROM receptionist Where emp_n='{$_SESSION['user_id']}' ");
+                                         $result=$this->db->query("SELECT name FROM receptionist Where emp_no='{$_SESSION['user_id']}' ");
                                          foreach($result->result() as $row){
                                             echo "<option>".$row->name."</option>";
                                           }  
@@ -127,8 +129,14 @@
                                      User Name
                                       <span class="form-control" name="user_name" > 
                                       <?php
-                                        echo $_SESSION['user_name'] ;
+                                         $result=$this->db->query("SELECT user_name FROM users Where user_id='{$_SESSION['user_id']}' ");
+                                         foreach($result->result() as $row){
+                                            echo "<option>".$row->user_name."</option>";
+                                          }  
                                      ?>
+                                      <!-- <?php
+                                        // echo $_SESSION['user_name'] ;
+                                     ?> -->
                                      </span> 
                                        
                                 </div>

@@ -154,8 +154,8 @@ https://templatemo.com/tm-541-host-cloud
     <!-- Services Ends Here -->
 
     <!-- About Us Starts Here -->
-    <div class="container">
     <div class="about-us">
+      <div class="container">
       <h1><center><b>OUR STORY</b></center></h1>
         <!--div class="row"-->
           <!--div class="col-md-6"-->
@@ -179,29 +179,26 @@ https://templatemo.com/tm-541-host-cloud
 
               <div id='tabs'>
                   <ul>
-                    <li><a href='#tabs-1'><center>Vision</center></a></li><br>
-                    <section class='tabs-content'>
+                    <li><a href='#tabs-1'>Vision</a></li>
+                    <li><a href='#tabs-2'>Mission</a></li>
+                    <li><a href='#tabs-3'>Who we are</a></li>
+                  </ul>
+                  <section class='tabs-content'>
                     <article id='tabs-1'>
-                       <p>"To be the foremost educatioal institute in Sri Lanka to produce high calibre students."</p><br> 
+                       <p>"To be the foremost educatioal institute in Sri Lanka to produce high calibre students."</p> 
                        
                       <!-- <p>Ut elementum a elit sed tristique. Pellentesque sed semper erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean quam erat, rutrum ut malesuada a, commodo vitae lectus. Integer volutpat sapien in arcu fringilla, ac eleifend est facilisis.
                       <br><br>Phasellus finibus lacus eu scelerisque rutrum. Duis purus eros, blandit ultricies iaculis in, commodo quis lacus. Pellentesque interdum varius enim nec accumsan.</p>
                     </article> -->
                   </article>
-                    <li><a href='#tabs-2'><center>Mission</center></a></li>
                     <article id='tabs-2'>
                       <!-- <p>Aenean molestie, odio quis viverra ultricies, leo tellus lacinia neque, sit amet maximus tortor nunc aliquet felis. Duis sit amet nibh non sapien tincidunt bibendum. Curabitur rutrum justo id leo ornare, suscipit lobortis augue volutpat.
                       <br><br>Sed ligula arcu, interdum eu magna eget, tristique aliquet nibh. Aenean sodales justo vitae ex pharetra, vitae tincidunt dolor condimentum. Cras vel mattis risus.</p>
                     -->
                   
-                    <p>“To guide our students towards the fortunes of knowledge.To produce winners amongst winners as well as disciplined all-round individuals with respectable social values.”</p><br>
+                    <p>“To guide our students towards the fortunes of knowledge.To produce winners amongst winners as well as disciplined all-round individuals with respectable social values.”</p>
                     <!-- </article> -->
                   </article>
-                    <li><a href='#tabs-3'><center>Who we are</center></a></li>
-                  </ul>
-                  <section class='tabs-content'>
-                    
-                    
                     <article id='tabs-3'>
                       <!-- <p>Fusce in semper velit, at tempus augue. Morbi quis auctor ipsum, ut accumsan neque. Vivamus dapibus ipsum placerat ante commodo, eget suscipit tortor hendrerit. Quisque lacinia sed velit et maximus.
                       <br><br>Quisque dictum, lacus a malesuada finibus, arcu magna luctus risus, eu accumsan risus elit vitae lacus. Vestibulum et lorem non erat efficitur iaculis ut nec nibh. Vestibulum mauris ipsum, tempor tincidunt justo sit amet, bibendum tincidunt dui.</p>
@@ -216,11 +213,6 @@ https://templatemo.com/tm-541-host-cloud
         </div>
       </div>
     </div>
-    </div>
-
-
-
-
      <!-- Footer -->
 	<section id="footer">
 		<div class="container">

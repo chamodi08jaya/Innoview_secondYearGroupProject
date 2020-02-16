@@ -12,7 +12,6 @@ $data1 = array(
 $this->db->insert('users',$data1);
 
 $data2 = array(
-
 'emp_no'=> $this->input->post('emp_no'),
 'name'=> $this->input->post('name'),
 'contact_no'=> $this->input->post('contact_number'),
@@ -23,4 +22,3 @@ $this->db->insert('receptionist',$data2);
 }
 
 }?>
-© 2020 GitHub, Inc.

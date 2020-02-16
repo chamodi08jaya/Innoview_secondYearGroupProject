@@ -54,9 +54,9 @@
         <nav class="templatemo-left-nav">          
         <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/receptionist"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/edit_recep"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/myprofile"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="#" class="active"><i class="fa fa-database fa-fw"></i>Notification</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_pay"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
@@ -93,13 +93,13 @@
                         <div class="form-top">
                         </div>
                         <div class="form-bottom">
-                        <form role="form" action="<?php echo site_url('Signup/send');?>" method="post" class="login-form">
+                        <form role="form" action="<?php echo site_url('Signup/rrsend');?>" method="post" class="login-form">
                                 
                                
-                                <div class="input-group form-group">
+                                <!-- <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                         <input type="text" class="form-control" id="notification_id" name="notification_id" placeholder=" Enter notification_Id" aria-describedby="basic-addon1" required="required">
-                                </div>
+                                </div> -->
                                 
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>

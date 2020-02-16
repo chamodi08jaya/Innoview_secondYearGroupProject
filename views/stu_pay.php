@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <title> Receptionist-Dashboard Home</title>
+    <title> Student-Dashboard Home</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
     <!-- 
@@ -33,32 +33,20 @@
       <div class="templatemo-sidebar">
         <header class="templatemo-site-header">
           <div class="square"></div>
-          <h1>Receptionist</h1>
+          <h1>Student</h1>
         </header>
-        <!-- <div class="profile-photo-container">
-          <img src="<?php echo base_url();?>assets/images/Receptionist.jpg" alt="Profile Photo" class="img-responsive">  
-          <div class="profile-photo-overlay"></div>
-        </div>       -->
-        <!-- Search box -->
-        <!-- <form class="templatemo-search-form" role="search">
-          <div class="input-group">
-              <button type="submit" class="fa fa-search"></button>
-              <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">           
-          </div>
-        </form> -->
+       
+       
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
           </div>
         <nav class="templatemo-left-nav">          
         <ul>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/receptionist"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/edit_recep"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
-            <li><a href="#" class="active"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_stu"><i class="fa fa-users fa-fw"></i>Student Registration</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/students"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/editusers"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
+            <li><a href="#" class="active"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
+            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Course Content</a></li>
+           <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
           </ul>        
        
@@ -70,7 +58,7 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                <li><a href="" class="active">Receptionist panel</a></li>
+                <li><a href="" class="active">Payment</a></li>
                 
                 <!-- <li><a href="login.html">Sign in form</a></li> -->
               </ul>  
@@ -83,97 +71,25 @@
               <table class="table table-striped table-bordered templatemo-user-table">
                 <thead>
                   <tr>
-                    <td><a href="" class="white-text templatemo-sort-by"># <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Grade <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Subject <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Date <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Time <span class="caret"></span></a></td>
-                  <td>Edit</td>
+                    <td><a href="" class="white-text templatemo-sort-by">Subject Number <span class="caret"></span></a></td>
+                    <td><a href="" class="white-text templatemo-sort-by">Month <span class="caret"></span></a></td>
+                    <td><a href="" class="white-text templatemo-sort-by">Payment Amount <span class="caret"></span></a></td>
+                    <!-- <td>Edit</td>
                     <td>Action</td>
-                    <td>Delete</td>
+                    <td>Delete</td> -->
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>1.</td>
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
+                    
+                    <!-- <td><a href="" class="templatemo-edit-btn">Edit</a></td>
                     <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
+                    <td><a href="" class="templatemo-link">Delete</a></td> -->
                   </tr>
-                  <tr>
-                    <td>2.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>
-                  <tr>
-                    <td>3.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>
-                  <tr>
-                    <td>4.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>
-                  <tr>
-                    <td>5.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>  
-                   <tr>
-                    <td>6.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>  
-                   <tr>
-                    <td>7.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>  
-                   <tr>
-                    <td>8.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td>
-                  </tr>                    
+                  
                 </tbody>
               </table>    
             </div>                          

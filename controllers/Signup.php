@@ -38,4 +38,31 @@ $item->registeruser();
 redirect(base_url().'index.php/Welcome/recepregistrations','refresh');
 }
 
+public function book()
+{
+$this->load->model('book');
+$item = new book;
+$item->book();
+redirect(base_url().'index.php/Welcome/recep_hall','refresh');
+}
+
+
+public function delete()
+{
+$this->load->model('delete');
+$item = new delete;
+$item->delete();
+redirect(base_url().'index.php/Welcome/cancel_booking','refresh');
+}
+
+public function rrsend()
+{
+$this->load->model('send');
+$item = new send;
+$item->resend();
+redirect(base_url().'index.php/Welcome/recep_noti','refresh');
+}
+
+
+
 }

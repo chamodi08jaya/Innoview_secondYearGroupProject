@@ -2,23 +2,34 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-Class Search extends CI_Controller
-{
+class Search extends CI_Controller{
+    function __construct()
+    {
+        parent::__construct();
+        $this->load->model('Searchmodel');
 
-   public function __construct() {
-       parent::__construct();
-       $this->load->model('searchmodel');
+        
+    }
 
-   }
+    function search_keyword()
+    {
+        $keyword    =   $this->input->post('keyword');
 
+        $data  =   $this->Searchmodel->search($keyword);
 
-   function search_keyword()
-   {
-       $keyword=$this->input->post('submit');
-       $data['users']=$this->searchmodel->search($keyword);
+        $this->load->view('payment',array('data'=>$data));
+        
+    }
 
-       $this->load->view('user/view', $data);
+    function stu_pay()
+    {
+        $keyword1    =   $this->input->post('keyword');
 
-   }
+        $data1  =   $this->Searchmodel->search($keyword1);
+        // $data1  =   $this->Searchmodel->stupay($keyword1);
+
+        $this->load->view('payment',array('data'=>$data1));
+        
+    }
 }
 ?>

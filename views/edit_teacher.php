@@ -32,7 +32,7 @@
         <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/teacher"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="#" class="active"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
-           <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Course Content</a></li>
+           <li><a href="<?php echo base_url();?>index.php/Welcome/teachercourse_content"><i class="fa fa-users fa-fw"></i>Course Content</a></li>
               <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
           </ul>  
@@ -73,7 +73,9 @@
                                 
                            
                                 <div class="input-group form-group">
-                                     Employee no
+                                <span class="input-group-addon" id="basic-addon1" ><i> Employee No </i> </span>
+                                   
+                                     <!-- Employee no -->
                                       <span class="form-control" name="emp_no" > 
                                       <?php
                                          $result=$this->db->query("SELECT emp_no FROM teacher Where emp_no='{$_SESSION['user_id']}' ");
@@ -84,7 +86,9 @@
                                 </div>
 
                                 <div class="input-group form-group">
-                                     User Name
+                                <span class="input-group-addon" id="basic-addon1" ><i> User   Name </i> </span>
+                                   
+                                     <!-- User Name -->
                                       <span class="form-control" name="user_name" > 
                                     <?php
                                           echo $_SESSION['user_name'] ;
@@ -93,7 +97,9 @@
                                 </div>
                                 
                                 <div class="input-group form-group">
-                                     Name
+                                <span class="input-group-addon" id="basic-addon1" ><i>   Name </i> </span>
+                                   
+                                    
                                       <span class="form-control" name="name" > 
                                       <?php
                                          $result=$this->db->query("SELECT name FROM teacher Where emp_no='{$_SESSION['user_id']}' ");
@@ -105,7 +111,9 @@
                                  </div>
                                 
                                  <div class="input-group form-group">
-                                     Contact Number
+                                 <span class="input-group-addon" id="basic-addon1" ><i> Contact Number</i> </span>
+<!--                                    
+                                     Contact Number -->
                                       <span class="form-control" name="contact_no" > 
                                       <?php
                                          $result=$this->db->query("SELECT contact_no FROM teacher Where emp_no='{$_SESSION['user_id']}' ");
@@ -117,7 +125,9 @@
                                  </div>
                                 
                                  <div class="input-group form-group">
-                                     Name
+                                 <span class="input-group-addon" id="basic-addon1" ><i>  Name </i> </span>
+                                   
+                                     <!-- Name -->
                                       <span class="form-control" name="email" > 
                                       <?php
                                          $result=$this->db->query("SELECT email FROM teacher Where emp_no='{$_SESSION['user_id']}' ");

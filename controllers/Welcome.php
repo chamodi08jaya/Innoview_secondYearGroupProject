@@ -13,6 +13,9 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('about');
 	}
+	public function viewpayment(){
+		$this->load->view('viewpayment');
+		}
 	public function contact()
 	{
 		$this->load->view('contact');
@@ -24,6 +27,18 @@ class Welcome extends CI_Controller {
 	public function login()
 	{
 		$this->load->view('login');
+	}
+	public function view_tutes()
+	{
+		$this->load->view('view_tutes');
+	}
+	public function view_grades()
+	{
+		$this->load->view('view_grades');
+	}
+	public function stu_coursecontent()
+	{
+		$this->load->view('stu_coursecontent');
 	}
 	
 	public function login_submit()
@@ -73,10 +88,21 @@ class Welcome extends CI_Controller {
 	public function recepregistrations(){
 		$this->load->view('recepregistrations');
 	}
+	public function teachercourse(){
+		$this->load->view('teachercourse');
+	}
+	public function teachercourse_content(){
+		$this->load->view('teachercourse_content');
+	}
 
 	public function editusers(){
 		$this->load->view('editusers');
 	}
+
+	public function view_answers(){
+		$this->load->view('view_answers');
+	}
+
 
 	public function editcourses(){
 		$this->load->view('editcourses');

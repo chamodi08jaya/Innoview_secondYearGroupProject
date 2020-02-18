@@ -26,19 +26,21 @@
         </header>
             
        
-        <div class="mobile-menu-icon">
+        <!-- <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
-        </div>
+        </div> -->
 
-        <nav class="templatemo-left-nav">          
+        <!-- Left dashboard  -->
+        <nav class="templatemo-left-nav">   
+               <!--Dahboard in the left side of the Page  -->
           <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/receptionist"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="#" class="active"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome//view_booking"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
-        </ul>  
+          </ul>  
         </nav>
 
       </div>
@@ -50,6 +52,7 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
               <ul class="text-uppercase">
+              <!-- Top Links in the navigation Bar -->
                 <li><a href="<?php echo base_url();?>index.php/Welcome/myprofile">My profile</a></li>
                 <li><a href="" class="active">Edit profile</a></li>
               </ul>
@@ -60,44 +63,46 @@
         </div>
 
         <div class="col-1">
-              <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
-                <i class="fa fa-times"></i>
+          <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+            <i class="fa fa-times"></i>
                
-                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">Edit Profile</h2></div>
+              <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">Edit Profile</h2></div>
                 <!-- <div class="form-top-right">
                                 <i class="fa fa-pencil"></i>
                             </div> -->
-          <div class="templatemo-flex-row flex-content-row templatemo-overflow-hidden"> 
-                <div class="templatemo-content-widget templatemo-login-widget white-bg">
+                <div class="templatemo-flex-row flex-content-row templatemo-overflow-hidden"> 
+                  <div class="templatemo-content-widget templatemo-login-widget white-bg">
                 
                     <div class="form-box">
                         <div class="form-top">
                         </div>
                         <div class="form-bottom">
-                        <form role="form" action="<?php echo site_url('update/updatedata');?>" method="post" class="login-form">
-                                
+                        <!-- Form to update data in the database -->
+                          <form role="form" action="<?php echo site_url('update/updatedata');?>" method="post" class="login-form">
+
+                             <!--Update the address  -->
                             <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
                                     <input type="text" class="form-control" name="address" placeholder="Address"  aria-describedby="basic-addon1" required="required">
-                                </div>
+                            </div>
 
                                 
-                            
-                                <div class="input-group form-group">
+                            <!-- Update the contact number -->
+                            <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
-                                        <input type="tel" class="form-control" name="contact_no" placeholder="Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
-                                </div>
+                                    <input type="tel" class="form-control" name="contact_no" placeholder="Contact Number" maxlength="10" minlength="10" aria-describedby="basic-addon1" required="required">
+                            </div>
 
-                          
-                                <div class="input-group form-group">
+                          <!-- Update the User Name -->
+                            <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
-                                        <input type="text" class="form-control" id="user_name" name="user_name" placeholder="User Name" aria-describedby="basic-addon1" required="required">
-                                </div>
+                                    <input type="text" class="form-control" id="user_name" name="user_name" placeholder="User Name" aria-describedby="basic-addon1" required="required">
+                            </div>
 
-                                <div class="input-group form-group">
+                            <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-unlock"></i></span>
-                                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" aria-describedby="basic-addon1" required="required">
-                                </div>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Password" aria-describedby="basic-addon1" required="required">
+                            </div>
 
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-unlock"></i></span>

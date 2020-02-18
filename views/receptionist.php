@@ -35,9 +35,11 @@
         </header>
             
        
-        <div class="mobile-menu-icon">
+        <!-- <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
-        </div>
+        </div> -->
+
+        <!-- Dashboard left navigation bar -->
 
         <nav class="templatemo-left-nav">          
           <ul>
@@ -45,7 +47,7 @@
             <li><a href="<?php echo base_url();?>index.php/Welcome/myprofile"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/payment"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/view_booking"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
         </ul>  
         </nav>
@@ -75,9 +77,11 @@
                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">Inbox</h2></div>
                <div class="table-responsive">
                  
+                 <!-- Table in the notification page -->
                  <table class="table table-striped table-bordered">
                    <thead>
                      <tr>
+                     <!-- Table headings -->
                        <td>Sender Name</td>
                        <td>Sender Email</td>
                        <td>Sender Subject</td>
@@ -90,7 +94,12 @@
                        <?php
                      // $result=$this->db->query("SELECT hall_no, day ,emp_no FROM booking_details");
                      // while($result->result() as $row){
+                      //  Select a rows in the the database and input to the table as query 
                        $result=$this->db->query("SELECT name,email,subject,message  FROM contact_us ORDER BY contactno DESC");
+                    //    if ($result) {
+                    //     die('Invalid query: ' . mysql_error());
+                    // }
+                      
                        foreach($result->result() as $row){
                          ?>
                      <tr>
@@ -110,13 +119,15 @@
                </div>                          
              </div>
            </div>           
-         </div> <!-- Second row ends --
+         </div> <!-- Second row ends -->
           
-          <footer class="text-right">
+
+          <!-- footer class -->
+        <footer class="text-right">
             <p>Copyright &copy; Team Innoview
             | Design: UCSC</p>
           </footer>         
-        </div>
+        </div> 
     
    
     

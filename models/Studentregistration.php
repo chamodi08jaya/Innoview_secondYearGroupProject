@@ -3,6 +3,10 @@
 class Studentregistration extends CI_Model{
 
 public function registeruser(){
+	$id = $this->input->post('student_id');
+	$query1 = $this->db->query("SELECT * FROM users WHERE user_id='$id'");
+	if($query1->result()) return false;
+	
 $data1 = array(
 'user_id'=> $this->input->post('student_id'),
 'user_type'=> $this->input->post('user_type'),
@@ -17,40 +21,45 @@ $data2 = array(
 );
 $this->db->insert('student_parent',$data2);
 
+
+// Subjects 
 $data3 = array(
 'studentid_fk'=> $this->input->post('student_id'),
 'courseid_fk'=> $this->input->post('sub1'),
 );
-$this->db->insert('student_learn',$data3);
+
+// if(isset($data3[studentid_fk]) && !($data3[courseid_fk]=="pick")){
+	$this->db->insert('student_learn',$data3);
 
 
-$t = sub2;
-
-if ($t != 'pick1') {
-	'studentid_fk'=> $this->input->post('student_id'),
-	'courseid_fk'=> $this->input->post('sub2'),
-);
-
-}
 
 $data4 = array(
+'studentid_fk'=> $this->input->post('student_id'),
+'courseid_fk'=> $this->input->post('sub2'),
+);
+// if(isset($data4[studentid_fk]) && !($data3[courseid_fk]=="pick1")){
+	$this->db->insert('student_learn',$data4);
 
-// if(sub2!='NULL')
-$this->db->insert('student_learn',$data4);
+
 
 $data5 = array(
 'studentid_fk'=> $this->input->post('student_id'),
 'courseid_fk'=> $this->input->post('sub3'),
 );
-// if(sub3!='NULL')
-$this->db->insert('student_learn',$data5);
+// if(isset($data5[studentid_fk]) && !($data3[courseid_fk]=="pick2")){
+	$this->db->insert('student_learn',$data5);
+
 
 $data6 = array(
 'studentid_fk'=> $this->input->post('student_id'),
 'courseid_fk'=> $this->input->post('sub4'),
 );
-// if(sub4!='NULL')
-$this->db->insert('student_learn',$data6);
+// if(isset($data6[studentid_fk]) && !($data3[courseid_fk]=="pick3")){
+	$this->db->insert('student_learn',$data6);
+
+
+
+// End Subject
 
 $data = array(
 'student_id'=> $this->input->post('student_id'),

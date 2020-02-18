@@ -45,7 +45,7 @@
             <li><a href="<?php echo base_url();?>index.php/Welcome/students"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/editusers"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="#" class="active"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Course Content</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome/stu_coursecontent"><i class="fa fa-users fa-fw"></i>Course Content</a></li>
            <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
           </ul>        
@@ -71,24 +71,31 @@
               <table class="table table-striped table-bordered templatemo-user-table">
                 <thead>
                   <tr>
-                    <td><a href="" class="white-text templatemo-sort-by">Subject Number <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Month <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Payment Amount <span class="caret"></span></a></td>
+                    <td>Subject ID </td>
+                    <td>Date </td>
+                    <td>Payment Amount </td>
                     <!-- <td>Edit</td>
                     <td>Action</td>
                     <td>Delete</td> -->
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    
-                    <!-- <td><a href="" class="templatemo-edit-btn">Edit</a></td>
-                    <td><a href="" class="templatemo-link">Action</a></td>
-                    <td><a href="" class="templatemo-link">Delete</a></td> -->
-                  </tr>
+                <?php
+                      // $result=$this->db->query("SELECT hall_no, day ,emp_no FROM booking_details");
+                      // while($result->result() as $row){
+                        $result=$this->db->query("SELECT subjectpay,paydate,amount  FROM stupay Where studentid='{$_SESSION['user_id']}'");
+                        foreach($result->result() as $row){
+                          ?>
+                      <tr>
+                        <td><?php echo $row->subjectpay;?></td>
+                        <td><?php echo $row->paydate; ?></td>
+                        <td><?php echo $row->amount; ?></td>
+                   
+                            
+                      </tr>
+                      <?php
+                        }
+                      ?>
                   
                 </tbody>
               </table>    

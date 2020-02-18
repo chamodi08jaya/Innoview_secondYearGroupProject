@@ -37,9 +37,10 @@
             <li><a href="<?php echo base_url();?>index.php/Welcome/edit_recep"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/recep_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
             <li><a href="#" class="active"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li>
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_hall"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
+            <li><a href="<?php echo base_url();?>index.php/Welcome//view_booking"><i class="fa fa-users fa-fw"></i>Hall Management</a></li>
             <!-- <li><a href="<?php echo base_url();?>index.php/Welcome/recep_attend"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li> -->
-            <li><a href="<?php echo base_url();?>index.php/Welcome/recep_stu"><i class="fa fa-users fa-fw"></i>Student Registration</a></li>
+            <!-- <li><a href="<?php echo base_url();?>index.php/Welcome/recep_stu"><i class="fa fa-users fa-fw"></i>Student Registration</a></li>
+             -->
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
           </ul>        
@@ -52,7 +53,7 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
-                 <li><a href="<?php echo base_url();?>index.php/Welcome/payment">Payment</a></li>
+                 <li><a href="<?php echo base_url();?>index.php/Welcome/payment" >Payment</a></li>
                  <li><a href="" class="active">View Payment</a></li>
                 
                 
@@ -70,25 +71,67 @@
               
             <div class="templatemo-content-container">
           <div class="templatemo-content-widget padding">
+          
+
+        <div class="templatemo-content-container">
+         
+          <div class="templatemo-flex-row flex-content-row">
+            
+            <div class="col-1">
+              <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+                <i class="fa fa-times"></i>
+                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">Inbox</h2></div>
+                <div class="table-responsive">
+                  
+                  <table class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                       <td>Payment No</td>
+                       <td>Payment Date</td>
+                       <td>Student ID</td>
+                       <td>Subject ID</td>
+                       <td>Amount</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <?php
+                      // $result=$this->db->query("SELECT hall_no, day ,emp_no FROM booking_details");
+                      // while($result->result() as $row){
+                        $result=$this->db->query("SELECT payment_id,paydate,studentid,subjectpay,amount FROM stupay ORDER BY payment_id ASC");
+                        foreach($result->result() as $row){
+                          ?>
+                      <tr>
+                        <td><?php echo $row->payment_id;?></td>
+                        <td><?php echo $row->paydate; ?></td>
+                        <td><?php echo $row->studentid; ?></td>
+                        <td><?php echo $row->subjectpay; ?></td>
+                        <td><?php echo $row->amount; ?></td>     
+                      </tr>
+                      <?php
+                        }
+                      ?>
+                                      
+                    </tbody>
+                  </table>    
+                </div>                          
+              </div>
+            </div>           
+          </div> <!-- Second row ends -->
            
+
+
+
+
+
+
            <div class="row">
  
 
 
 
 
-<!--site_url: Returns base_url + index_page + uri_string-->
-   <form class="form-inline" role="form" action="<?php echo site_url().'/search/search_keyword';?>" method="post">
-       <div class="form-group">
-           <input type="text" class="form-control" name="search" placeholder="Search by Student ID">
-       </div>
-<button type="submit" class="btn btn-info" name="submit" >Search</button>
-   </form>
 
 
-
-
-        </div>
           <footer class="text-right">
             <p>Copyright &copy; Team Innoview
             | Design:UCSC</p>

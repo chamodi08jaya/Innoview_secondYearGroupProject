@@ -101,7 +101,7 @@ https://templatemo.com/tm-541-host-cloud
          
         <table class="table table-striped table-bordered">
                     <thead>
-                      <th colspan="6"><center>ADVACED LEVEL</center></th>
+                      <th colspan="6"><center>ADVACED LEVEL-THEORY</center></th>
                       <tr>
                         <td>No.</td>
                         <td>Subject</td>
@@ -182,7 +182,7 @@ https://templatemo.com/tm-541-host-cloud
 
                   <table class="table table-striped table-bordered">
                     <thead>
-                      <th colspan="6"><center>ADVACED LEVEL</center></th>
+                      <th colspan="6"><center>ADVACED LEVEL-REVISION</center></th>
                       <tr>
                         <td>No.</td>
                         <td>Subject</td>

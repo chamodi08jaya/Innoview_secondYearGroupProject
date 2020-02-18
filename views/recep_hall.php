@@ -58,9 +58,8 @@
         </div>
         <div class="templatemo-content-container">
           <div class="templatemo-content-widget padding">
-
-       
-          <form role="form" action="<?php echo site_url('Signup/book');?>" method="post" class="login-form">
+                   
+              <form role="form" action="<?php echo site_url('Signup/book');?>" method="post" class="login-form">
                             
 								<div class="row">
 									<div class="col-sm-5">
@@ -70,6 +69,7 @@
 
                       
                        <select class="form-control" name="hall_no" id="hall_no">
+                       <option >None</option>
                         
                       <?php
                       
@@ -95,13 +95,14 @@
 										<div class="form-group">
 											<!-- <span class="form-label">Slot</span>
                       </br> -->
-                      <span class="form-label">Day</span>
-                      <select class="form-control" name="day" id="day">
+                      <span class="form-label">Day and Time</span>
+                      <select class="form-control" name="time" id="time">
+                      <option >None</option>
                       <?php
                       
-                      $result=$this->db->query("SELECT day FROM time_slot");
+                      $result=$this->db->query("SELECT time FROM day");
                       foreach($result->result() as $row){
-                        echo "<option>".$row->day."</option>";
+                        echo "<option>".$row->time."</option>";
                       }
                       ?>
                      
@@ -119,6 +120,7 @@
 											
                       <span class="form-label">Teacher Employee no</span>
                       <select class="form-control" name="emp_no" id="emp_no">
+                      <option >None</option>
                       <?php
                       
                       $result=$this->db->query("SELECT emp_no FROM teacher");

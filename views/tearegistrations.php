@@ -107,6 +107,7 @@
                         <div class="form-top">
                         </div>
                         <div class="form-bottom">
+                        <?php if(isset($_SESSION['status1']) && $_SESSION['status1'] != "") echo "<h3 style='color:red'>".$_SESSION['status1']."</h3>"; ?>
                         <form role="form" action="<?php echo site_url('Signup/tregistration');?>" method="post" class="login-form">
                                 
                                 <div class="input-group form-group">

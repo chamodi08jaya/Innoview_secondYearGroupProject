@@ -66,7 +66,7 @@
             <!-- <li><a href="<?php echo base_url();?>index.php/Welcome/teacher_noti"><i class="fa fa-database fa-fw"></i>Notification</a></li>
             -->
             <!-- <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Payment</a></li> -->
-            <li><a href="<?php echo base_url();?>index.php/Welcome/teachercourse_content"><i class="fa fa-users fa-fw"></i>Course Content</a></li>
+            <li><a href="" class="active"><i class="fa fa-users fa-fw"></i>Course Content</a></li>
             <!-- <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Attendence</a></li> -->
             <li><a href="<?php echo base_url();?>index.php/Welcome/logout"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
          
@@ -79,44 +79,119 @@
           <div class="row">
             <nav class="templatemo-top-nav col-lsg-12 col-md-12">
               <ul class="text-uppercase">
-                <li><a href="" class="active">Upload content</a></li>
+                <li><a href="" class="active">Upload Questions</a></li>
+                <li><a href="<?php echo base_url();?>index.php/Welcome/view_answers">View Answers</a></li>
+                <!-- <li><a href="<?php echo base_url();?>index.php/Welcome/upload_grades class="active">Upload Grades</a></li>
+              -->
+              <li><a href="<?php echo base_url();?>index.php/Welcome/teachercourse">Upload content</a></li>
               </ul>  
             </nav> 
           </div>
         </div>
-
-        <!--File upload section-->
-        <div class="col-md-6 offset-md-3 mt-5">
-
-
-
-        <h1 class="upload">Upload file</h1>
-          <!-- <p class="alert alert-succes"><?php echo $this->session->flashdata('success_msg'); ?></p>
-          <p class="alert alert-danger"><?php echo $this->session->flashdata('success_msg'); ?></p>
-          <?php echo $this->session->flashdata('error_msg'); ?> -->
-          <form role="form" method="post" action="<?php echo base_url('index.php/teacherup/add');?>" enctype="multipart/form-data" class="upload-form">
+        <div class="col-1">
+              <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+                <i class="fa fa-times"></i>
+               
+                <div class="panel-heading templatemo-position-relative"><h2 class="text-uppercase">Upload Question</h2></div>
+                <!-- <div class="form-top-right">
+                                <i class="fa fa-pencil"></i>
+                            </div> -->
+          <div class="templatemo-flex-row flex-content-row templatemo-overflow-hidden"> 
+                <div class="templatemo-content-widget templatemo-login-widget white-bg">
+                
+                    <div class="form-box">
+                        <div class="form-top">
+                        </div>
+                        <div class="form-bottom">
+         
+          <!-- <form action="" method="POST" target="" class="upload-form">
             <div class="form-group">
-              <label for="InputID">Employee ID</label>
-              <input type="text" name="id" class="form-control" id="InputID" placeholder="Enter employee ID" required="required"></div>
+              <label for="InputID">Student Id</label>
+              <input type="text" name="studentId" class="form-control" id="InputID" placeholder="Enter student ID" required="required"></div>
               <div class="form-group">
             <label for="InputName">Full Name</label>
-            <input type="text" name="name" class="form-control" id="InputName" placeholder="Enter name"></div>
+            <input type="text" name="employeeName" class="form-control" id="InputName" placeholder="Enter name"></div>
             <div class="form-group">
             <label for="InputSubject">Subject</label>
             <input type="text" name="subject" class="form-control" id="InputSubject" placeholder="Enter subject"></div>
-            <div class="form-group">
-            <label for="InputSubject">File Name</label>
-            <input type="text" name="filename" class="form-control" id="InputFileName" placeholder="Enter file name"></div>
+
             <div class="form-group mt-3">
-            <label class="mr-2">Upload your File</label>
-            <input type="file" name="file_up">
-          </div>
-          <div class="form-group">
-                <input type="submit" class="btn btn-warning" name="userSubmit" value="Add">
-            </div>
+              <label class="mr-2">Upload your Text</label>
+              <input type="text" name="subject" class="form-control" id="InputSubject" placeholder="Enter subject"></div>
+             -->
+            <!-- <input type="file" name="file"> -->
+  
+          <!-- <hr>
+          <button type="submit" class="btn btn-primary">Submit</button> -->
+          <form role="form" action="<?php echo site_url('upload/uploadquestion');?>" method="post" class="login-form">
+                                
+                                <div class="input-group form-group">
+                                        <!-- <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                                        -->
+                                        <input type="text" class="form-control" name="emp_no" size="100" max-length="100"placeholder="Employee Number"  aria-describedby="basic-addon1" required="required">
+                                    </div>
+    
+                                    
+                                
+                                    <div class="input-group form-group">
+                                        <!-- <span class="input-group-addon" id="basic-addon1"><i class="fa fa-phone"></i></span>
+                                           -->
+                                        <input type="text" class="form-control" size="100" max-length="100"name="name" placeholder="name"  aria-describedby="basic-addon1" required="required">
+                                    </div>
+    
+                              
+                                    <div class="input-group form-group">
+                                        <!-- <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+                                          -->
+                                        <input type="text" class="form-control" size="100" max-length="100"id="subject_id" name="subject_id" placeholder="Subject ID" aria-describedby="basic-addon1" required="required">
+                                    </div>
+    
+                                    <div class="input-group form-group">
+                                        <!-- <span class="input-group-addon" id="basic-addon1"><i class="fa fa-unlock"></i></span>
+                                        -->
+                                        <input style="height:200px" type="text" class="form-control" id="file"size="100" max-length="100"  name="file" placeholder="Question" aria-describedby="basic-addon1" required="required">
+                                    </div>
+    
+                                    
+                                   
+                    
+                    <tr>
+                        <td></td>
+                        <td><input class="templatemo-blue-button width-100" type="submit" name="submit" value="Upload question">
+                      
+                    </tr>
+                    
+                </table>  
+    
+                
+                                  
+                                    
         </form>
     </div> 
-          
+                    <!-- <center>
+                    <h3>OR</h3>
+                    <a href="<?php echo base_url();?>index.php/Welcome/login">Already You have an Account ?</a>
+                    </center> -->
+	             </div>
+                    
+
+            </div>
+
+
+    </section>
+
+     
+              </div>
+            </div>
+          </div>
+          <footer class="text-right">
+            <p>Copyright &copy; Team Innoview
+            | UCSC</p>
+          </footer>         
+        </div>
+      </div>
+    </div>
+    
 <!--File upload section ends-->
     
     <!-- JS -->

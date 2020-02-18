@@ -3,6 +3,9 @@
 class Teacherregistration extends CI_Model{
 
 public function registeruser(){
+    $id = $this->input->post('emp_no');
+	$query1 = $this->db->query("SELECT * FROM users WHERE user_id='$id'");
+	if($query1->result()) return false;
 $data1 = array(
 'user_id'=> $this->input->post('emp_no'),
 'user_type'=> $this->input->post('user_type'),

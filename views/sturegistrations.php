@@ -1,4 +1,4 @@
-<?php include('includes/connection.php') ?>
+ <?php include('includes/connection.php') ?>
 <?php  //include('includes/session.php') ?>
 <?php include('includes/messege.php') ?>
 
@@ -116,6 +116,8 @@
                         <div class="form-top">
                         </div>
                         <div class="form-bottom">
+                          <?php if(isset($_SESSION['status']) && $_SESSION['status'] != "") echo "<h3 style='color:red'>".$_SESSION['status']."</h3>"; ?>
+
                         <form role="form" action="<?php echo site_url('Signup/registration');?>" method="post" class="login-form">
 
                                 <div class="input-group form-group">

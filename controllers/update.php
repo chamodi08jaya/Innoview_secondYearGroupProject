@@ -13,6 +13,20 @@ class update extends CI_Controller
 		$item = new updaterec;
 		$item->updaterecords();
 		redirect(base_url().'index.php/Welcome/edit_recep','refresh');
+
+		// if(!$item->updaterecords()){
+		// $data = $data = array(
+		// 	'status' => 'Update the Profile Successfully'
+		// );
+		// $this->load->view('sturegistrations.php', $data);
+		
+		// $_SESSION['status'] = 'Update the Profile Successfully';
+		// redirect(base_url().'index.php/Welcome/edit_recep','refresh');
+		// }
+		// else{
+		// $_SESSION['status'] = '';
+		// redirect(base_url().'index.php/Welcome/edit_recep','refresh');
+		// }
 	
 	}
 

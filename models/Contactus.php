@@ -9,6 +9,7 @@ $data = array(
 'subject'=> $this->input->post('subject'),
 'message'=> $this->input->post('message'),
 );
+echo '<script>alert(" Succssfully send the message")</script>';
 return $this->db->insert('contact_us',$data);
 }
 

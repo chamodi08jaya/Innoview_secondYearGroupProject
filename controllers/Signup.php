@@ -99,6 +99,7 @@ public function rrsend()
 $this->load->model('send');
 $item = new send;
 $item->resend();
+
 redirect(base_url().'index.php/Welcome/recep_noti','refresh');
 }
 

@@ -25,6 +25,7 @@
     https://templatemo.com/tm-455-visual-admin
     -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
+    <link href="<?php echo base_url();?>assets\css\checkbox.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/templatemo-style.css" rel="stylesheet">
@@ -88,6 +89,7 @@
                   <table class="table table-striped table-bordered">
                     <thead>
                       <tr>
+                      
                         <td>Date</td>
                         <td>Message</td>
                       

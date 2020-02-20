@@ -11,7 +11,16 @@ $data1 = array(
 );
 
 // echo $data1['hall_no'];
-$this->db->delete('booking_details',$data1);
+
+
+
+  $result=$this->db->query("SELECT time FROM booking_details where time=time ");
+//   foreach($result->result() as $row){
+    echo '<script>alert(" Succssfully delete a hall")</script>';
+ 
+//   }
+  
+  $this->db->delete('booking_details',$data1);
 
 }
 }

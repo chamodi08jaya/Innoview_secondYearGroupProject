@@ -116,7 +116,10 @@
                         <div class="form-top">
                         </div>
                         <div class="form-bottom">
-                          <?php if(isset($_SESSION['status']) && $_SESSION['status'] != "") echo "<h3 style='color:red'>".$_SESSION['status']."</h3>"; ?>
+                          <?php
+                          //  if(isset($_SESSION['status']) && $_SESSION['status'] != "") echo "<h3 style='color:red'>".$_SESSION['status']."</h3>";
+                  
+                          ?>
 
                         <form role="form" action="<?php echo site_url('Signup/registration');?>" method="post" class="login-form">
 
@@ -141,16 +144,19 @@
                                         <input type="date" class="form-control" name="dob" placeholder="Date of Birth" label="Date of Birth" aria-describedby="basic-addon1" required="required">
                                 </div>
 
-
-                               <!--  <div class="input-group form-group">
-                                    <span class="input-group-addon" class="form-control" id="basic-addon1"><i class="fa fa-user"></i>Gender<input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female</span> -->
-                                            
-                                </div>
+                                
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-envelope"></i></span>
                                         <input type="email" class="form-control" name="email" placeholder="Email" aria-describedby="basic-addon1" required="required">
                                 </div>
-                            
+
+                                <!-- <input type="radio" id="male" name="gender" value="male"> -->
+                                <!-- <div class="input-group form-group">
+                                    <span class="input-group-addon" class="form-control" id="basic-addon1"><i class="fa fa-user"></i>Gender<input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"> Female</span>
+                    
+                                            
+                                </div> -->
+                              
                                 <div class="input-group form-group">
                                     <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
                                         <input type="text" class="form-control" id="user_name" name="user_name" placeholder="User Name" aria-describedby="basic-addon1" required="required">
@@ -323,12 +329,13 @@
 
     </section>
 
-   
+    <!-- <input type="radio" id="male" name="gender" value="male"> -->
      
               </div>
             </div>
           </div>
           <footer class="text-right">
+          <!-- <input type="checkbox" name="vehicle1" value="Bike"> -->
             <p>Copyright &copy; Team Innoview
             | UCSC</p>
           </footer>         

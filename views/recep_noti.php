@@ -51,7 +51,8 @@
         <div class="mobile-menu-icon">
             <i class="fa fa-bars"></i>
           </div>
-        <nav class="templatemo-left-nav">          
+        <nav class="templatemo-left-nav">   
+         <!--Left Dashboard  -->
         <ul>
             <li><a href="<?php echo base_url();?>index.php/Welcome/receptionist"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
             <li><a href="<?php echo base_url();?>index.php/Welcome/myprofile"><i class="fa fa-bar-chart fa-fw"></i>Edit Profile</a></li>
@@ -71,6 +72,7 @@
             <nav class="templatemo-top-nav col-lg-12 col-md-12">
               <ul class="text-uppercase">
                 <!-- <li><a href="" class="active">Inbox</a></li> -->
+                <!-- Top Naviagtion Bar Links -->
                 <li><a href="" class="active">Compose</a></li>
                 
                 <!-- <li><a href="login.html">Sign in form</a></li> -->
@@ -117,7 +119,8 @@
                 
                 <tr>
                     <td></td>
-                    <td><input class="templatemo-blue-button width-100" type="submit" name="sent" value="sent">
+                    <td><input class="templatemo-blue-button width-100" type="submit" name="sent" value="sent" >
+                    <!-- echo '<script>alert("Message Sent Successfully")</script>'; -->
                     <br/>
                 
                 </tr>
@@ -153,6 +156,8 @@
     </div>
     
     <!-- JS -->
+
+  
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
     <script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
     <script>
